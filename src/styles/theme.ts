@@ -44,7 +44,7 @@ export const theme = {
         tertiaryFixedDim: "#efbf71",
         onTertiaryFixed: "#281900",
         onTertiaryFixedVariant: "#604100",
-        background: "#131313",
+        background: "#000000",
         onBackground: "#e2e2e2",
         surfaceVariant: "#353535",
     },
@@ -132,8 +132,24 @@ export const spacing =
     ({ theme }: { theme: ThemeType }) =>
         theme.spacing[key];
 
+// For border-radius and miscellaneous
+export const rounded =
+    (key: keyof ThemeType["rounded"]) =>
+    ({ theme }: { theme: ThemeType }) =>
+        theme.rounded[key];
+
 // For fonts
 export const font =
     (key: keyof ThemeType["typography"]) =>
-    ({ theme }: { theme: ThemeType }) =>
-        theme.typography[key];
+    ({ theme }: { theme: ThemeType }) => {
+        const { fontFamily, size, weight, lineHeight, letterSpacing } = theme
+            .typography[key] as Record<string, string | undefined>;
+
+        return `
+font-family: ${fontFamily};
+font-size: ${size};
+font-weight: ${weight};
+line-height: ${lineHeight};
+${letterSpacing ? `letter-spacing: ${letterSpacing};` : ""}
+`;
+    };

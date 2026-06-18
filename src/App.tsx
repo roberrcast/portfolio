@@ -1,7 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./components/Header";
+
 function App() {
     return (
         <>
-            <h1>App Component</h1>
+            <Header />
+            <main>
+                <Routes>
+                    <Route></Route>
+                </Routes>
+            </main>
         </>
     );
 }

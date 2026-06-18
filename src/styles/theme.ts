@@ -93,23 +93,47 @@ export const theme = {
             lineHeight: "1",
             letterSpacing: "0.1em",
         },
+    },
 
-        rounded: {
-            sm: "0.5rem",
-            default: "1rem",
-            md: "1.5rem",
-            lg: "2rem",
-            xl: "3rem",
-            full: "9999px",
-        },
+    rounded: {
+        sm: "0.5rem",
+        default: "1rem",
+        md: "1.5rem",
+        lg: "2rem",
+        xl: "3rem",
+        full: "9999px",
+    },
 
-        spacing: {
-            containerMax: "768px",
-            gutter: "1.5rem",
-            marginMobile: "1rem",
-            sectionGap: "4rem",
-        },
+    spacing: {
+        containerMax: "768px",
+        gutter: "1.5rem",
+        marginMobile: "1rem",
+        sectionGap: "4rem",
     },
 };
 
 export type ThemeType = typeof theme;
+
+/* Helper functions to keep DRY: avoid writing ${({ theme }) => theme.bla.bla}; */
+
+/* Use it like this
+    max-width: ${spacing("containerMax")};
+*/
+
+// For colors:
+export const color =
+    (key: keyof ThemeType["colors"], alpha: string = "") =>
+    ({ theme }: { theme: ThemeType }) =>
+        `${theme.colors[key]}${alpha}`;
+
+// For spacing:
+export const spacing =
+    (key: keyof ThemeType["spacing"]) =>
+    ({ theme }: { theme: ThemeType }) =>
+        theme.spacing[key];
+
+// For fonts
+export const font =
+    (key: keyof ThemeType["typography"]) =>
+    ({ theme }: { theme: ThemeType }) =>
+        theme.typography[key];

@@ -1,14 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
     return (
         <>
             <Header />
             <main>
-                <Routes>
-                    <Route></Route>
-                </Routes>
+                <Hero />
             </main>
         </>
     );

@@ -29,3 +29,11 @@ export const hoverFont = (
         }
     }
 `;
+
+export const hoverCursor = () => css`
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+`;

@@ -8,20 +8,26 @@ export const Header = styled.header`
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 50%;
+    z-index: 50;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.8);
-    ${blur(12)};
+    ${blur(13)};
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 `;
 
 export const Logo = styled.div`
-    ${font("headlineLg")};
-    color: ${color("primary")};
+    a {
+        ${font("headlineLg")};
+        color: ${color("primary")};
+
+        @media (hover: hover) {
+            cursor: pointer;
+        }
+    }
 `;
 
 export const NavContent = styled.div`

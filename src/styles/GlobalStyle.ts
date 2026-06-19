@@ -24,4 +24,32 @@ body {
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
 }
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.material-symbols-outlined {
+   font-family: 'Material Symbols Outlined' !important;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 1;
+   letter-spacing: normal;
+   text-transform: none;
+   display: inline-block;
+   white-space: nowrap;
+   word-wrap: normal;
+   direction: ltr;
+   -webkit-font-smoothing: antialiased;
+   
+   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
 `;

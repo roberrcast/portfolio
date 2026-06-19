@@ -3,7 +3,7 @@ import me from "../../assets/me.webp";
 
 export const Hero: React.FC = () => {
     return (
-        <S.HeroContainer id="hero">
+        <S.HeroContainer id="hero" className="reveal">
             <S.ImageContainer>
                 <img src={me} alt="Roberto's profile image" />
             </S.ImageContainer>

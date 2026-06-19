@@ -1,13 +1,14 @@
 export const theme = {
     colors: {
-        surface: "#131313",
-        surfaceDim: "#131313",
+        surface: "#1a1a1a",
+        surfaceDim: "#333333",
         surfaceBright: "#393939",
         surfaceContainerLowest: "#0e0e0e",
         surfaceContainerLow: "#1b1b1b",
         surfaceContainer: "#1f1f1f",
         surfaceContainerHigh: "#2a2a2a",
         surfaceContainerHighest: "#353535",
+        lowContrastOutline: "#2d3748",
         onSurface: "#e2e2e2",
         onSurfaceVariant: "#bdc9c6",
         inverseSurface: "#e2e2e2",
@@ -17,7 +18,7 @@ export const theme = {
         surfaceTint: "#72d7cb",
         primary: "#b5fff4",
         onPrimary: "#003732",
-        primaryContainer: "#81e6d9",
+        primaryContainer: "#81e6d9", // Teal accent
         onPrimaryContainer: "#00675f",
         inversePrimary: "#006a62",
         secondary: "#bdc7dc",
@@ -73,7 +74,7 @@ export const theme = {
         },
 
         bodyMd: {
-            fontFamily: "'Mono', serif",
+            fontFamily: "'Mono', serif, monospace",
             size: "16px",
             weight: "400",
             lineHeight: "1.6",

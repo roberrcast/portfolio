@@ -3,12 +3,17 @@ import { color, font, rounded, spacing } from "../../styles/theme";
 import { hoverCursor } from "../../styles/mixins";
 
 export const WorksSection = styled.section`
+    max-width: ${spacing("containerMax")};
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 ${spacing("gutter")};
     margin-bottom: ${spacing("sectionGap")};
 `;
 
 export const SectionTitle = styled.h3`
     ${font("headlineLg")};
-    color: ${color("primary")};
+    color: ${color("onSurface")};
+    font-weight: 700;
     margin-bottom: 3rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid ${color("outlineVariant")};
@@ -74,7 +79,7 @@ export const ImageLinkWrapper = styled.a`
     // Interactive tint on hover
     &::after {
         content: "";
-        poisition: absolute;
+        position: absolute;
         inset: 0;
         background-color: rgba(129, 230, 217, 0.05);
         opacity: 0;
@@ -110,6 +115,7 @@ export const CardHeader = styled.div`
 export const ProjectTitle = styled.h4`
     ${font("headlineLgMobile")};
     color: ${color("onSurface")};
+    font-weight: 700;
 
     @media (min-width: 768px) {
         font-size: 32px;

@@ -54,6 +54,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
     ${font("bodyMd")};
     font-weight: 600;
+    letter-spacing: 0.13em;
     text-transform: uppercase;
     color: ${color("primaryContainer")};
     max-width: 600px;

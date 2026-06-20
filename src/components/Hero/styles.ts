@@ -24,7 +24,7 @@ export const ImageContainer = styled.div`
     img {
         width: 100%;
         height: 100%;
-        object-cover: cover;
+        object-fit: cover;
         transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -54,6 +54,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
     ${font("bodyMd")};
     font-weight: 600;
+    letter-spacing: 0.13em;
     text-transform: uppercase;
     color: ${color("primaryContainer")};
     max-width: 600px;
@@ -62,9 +63,14 @@ export const Subtitle = styled.h2`
 
 export const Description = styled.p`
     ${font("bodyMd")};
+    font-size: 15.5px;
     color: ${color("onSurfaceVariant")};
     max-width: 600px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 0 0.4rem;
+    }
 `;
 
 export const ButtonWrapper = styled.div`

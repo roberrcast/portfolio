@@ -1,4 +1,5 @@
 import * as S from "./styles";
+import { Link } from "react-router-dom";
 
 const NAV_LINKS = [
     { id: 1, name: "Works", path: "/works" },
@@ -10,7 +11,9 @@ export const Header = () => {
     return (
         <S.Header>
             <S.NavContent>
-                <S.Logo>RR</S.Logo>
+                <S.Logo>
+                    <Link to={"/"}>RR</Link>
+                </S.Logo>
 
                 <S.NavLinks>
                     <S.List>

@@ -12,7 +12,7 @@ export const Header = () => {
         <S.Header>
             <S.NavContent>
                 <S.Logo>
-                    <Link to={"/"}>RR</Link>
+                    <Link to={"/"}>{"{ IO }"}</Link>
                 </S.Logo>
 
                 <S.NavLinks>

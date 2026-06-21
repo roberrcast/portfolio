@@ -22,11 +22,18 @@ export const Header = styled.header`
 export const Logo = styled.div`
     a {
         ${font("headlineLg")};
-        color: ${color("primary")};
+        color: ${color("onSurface")};
+        font-weight: 800;
 
         @media (hover: hover) {
             cursor: pointer;
         }
+    }
+
+    svg {
+        width: 120px;
+        height: auto;
+        display: block;
     }
 `;
 
@@ -75,7 +82,7 @@ export const NavLink = styled(RouterNavLink)`
     ${hoverFont("primary")};
 
     &.active {
-        color: ${color("primary")};
+        color: ${color("inverseSurface")};
         font-weight: 700;
         border-bottom: 2px solid ${color("primary")};
     }

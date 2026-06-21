@@ -26,6 +26,8 @@ export const FeaturedWorks: React.FC = () => {
                             >
                                 <img
                                     src={project.image}
+                                    role="img"
+                                    loading="lazy"
                                     alt={project.altText}
                                 />
                             </S.ImageLinkWrapper>

@@ -16,6 +16,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }

@@ -19,6 +19,15 @@ export const Header = styled.header`
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 `;
 
+export const NavContent = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: ${spacing("containerMax")};
+    padding: 0 ${spacing("gutter")};
+`;
+
 export const Logo = styled.div`
     a {
         ${font("headlineLg")};
@@ -35,15 +44,6 @@ export const Logo = styled.div`
         height: auto;
         display: block;
     }
-`;
-
-export const NavContent = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: ${spacing("containerMax")};
-    padding: 0 ${spacing("gutter")};
 `;
 
 export const ButtonsContainer = styled.div`

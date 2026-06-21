@@ -32,13 +32,26 @@ body {
 
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
     transition: all 0.8s ease-out;
+    pointer-events: none;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0, 0);
+    pointer-events: auto;
+}
+
+.reveal-up {
+    transform: translateY(30px); 
+}
+
+.reveal-left {
+    transform: translateX(-50px); 
+}
+
+.reveal-right {
+    transform: translateX(50px); 
 }
 
 .material-symbols-outlined {

@@ -17,7 +17,7 @@ export const projectData: ProjectItem[] = [
         image: gallery,
         altText: "Virtual Gallery Interface Screenshot",
         description:
-            "An interactive web application consuming the Art Institute of Chicago's API. Built for deep exploration of cultural heritage through a seamless UI.",
+            "An interactive web application consuming the Art Institute of Chicago's API. Built for deep exploration of cultural heritage through a curated UI.",
         tags: ["React", "API Integration", "Redux"],
         link: "https://theopengallery.netlify.app",
     },

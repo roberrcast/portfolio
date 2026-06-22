@@ -5,6 +5,7 @@ const NAV_LINKS = [
     { id: 1, name: "Works", path: "/works" },
     { id: 2, name: "About", path: "/about" },
     { id: 3, name: "Contact", path: "/contact" },
+    { id: 4, name: "Stack", path: "/stack" },
 ];
 
 export const Header = () => {

@@ -4,6 +4,9 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import { en as commonEn, es as commonEs } from "./common";
 
+// Hero translations
+import { en as heroEn, es as heroEs } from "../components/Hero/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -13,10 +16,12 @@ i18next
         resources: {
             en: {
                 common: commonEn,
+                hero: heroEn,
             },
 
             es: {
                 common: commonEs,
+                hero: heroEs,
             },
         },
 

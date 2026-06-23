@@ -5,6 +5,10 @@ export const en = {
         contact: "Contact",
         stack: "Stack",
     },
+
+    buttons: {
+        hireMe: "Hire Me",
+    },
 };
 
 export const es = {
@@ -13,5 +17,9 @@ export const es = {
         about: "Acerca de",
         contact: "Contacto",
         stack: "Stack",
+    },
+
+    buttons: {
+        hireMe: "Contráteme",
     },
 };

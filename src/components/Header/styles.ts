@@ -49,12 +49,12 @@ export const Logo = styled.div`
 export const ButtonsContainer = styled.div`
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 `;
 
 export const NavLinks = styled.nav`
     display: none;
-    gap: 2rem;
+    gap: 1.4rem;
     align-items: center;
 
     @media (min-width: 768px) {
@@ -119,6 +119,7 @@ export const LanguageToggle = styled.button`
     background: transparent;
     transition: all 0.2s;
     ${hover("primary", "0D")};
+    align-items: center;
 
     &:active {
         transform: scale(0.95);

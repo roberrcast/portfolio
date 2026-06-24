@@ -14,12 +14,12 @@ export const en = {
 export const es = {
     nav: {
         works: "Proyectos",
-        about: "Acerca de",
+        about: "Acerca",
         contact: "Contacto",
         stack: "Stack",
     },
 
     buttons: {
-        hireMe: "Contráteme",
+        hireMe: "Contratar",
     },
 };

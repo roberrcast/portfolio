@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
             <S.Logo>RR / PORTFOLIO</S.Logo>
 
             <S.Copyright>
-                {currentYear} Roberto Rodriguez. Built with precision.
+                {currentYear} Roberto Rodriguez. Built with love.
             </S.Copyright>
 
             <S.LinkGroup>

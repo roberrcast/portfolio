@@ -6,22 +6,29 @@ import { en as commonEn, es as commonEs } from "./common";
 
 // Hero translations
 import { en as heroEn, es as heroEs } from "../components/Hero/translation";
+//Featured
+import {
+    en as featuredEn,
+    es as featuredEs,
+} from "../components/Featured/translation";
 
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         fallbackLng: "en",
-        // Registramos el namespace común aquí
+        // Registramos los namespaces aquí
         resources: {
             en: {
                 common: commonEn,
                 hero: heroEn,
+                featured: featuredEn,
             },
 
             es: {
                 common: commonEs,
                 hero: heroEs,
+                featured: featuredEs,
             },
         },
 

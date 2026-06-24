@@ -1,15 +1,15 @@
 import { channelData } from "./data";
 import * as S from "./styles";
+import { useTranslation } from "react-i18next";
 
 export const SectionContact: React.FC = () => {
+    const { t } = useTranslation("contact");
+
     return (
         <S.ContactSection id="contact" className="reveal reveal-up">
-            <S.Title>Let's Build something exceptional.</S.Title>
+            <S.Title>{t("title")}</S.Title>
 
-            <S.Description>
-                Currently open to new opportunities and collaborations. Drop a
-                message or find me on social platforms.
-            </S.Description>
+            <S.Description>{t("subtitle")}</S.Description>
 
             <S.ChannelsGrid>
                 {channelData.map((channel) => (

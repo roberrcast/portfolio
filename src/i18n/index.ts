@@ -13,11 +13,17 @@ import {
     es as featuredEs,
 } from "../components/Featured/translation";
 
-// About me
+// SectionAboutMe
 import {
     en as aboutEn,
     es as aboutEs,
 } from "../components/SectionAboutMe/transaltion";
+
+// SectonContact
+import {
+    en as contactEn,
+    es as contactEs,
+} from "../components/SectionContact/translation";
 
 i18next
     .use(LanguageDetector)
@@ -31,6 +37,7 @@ i18next
                 hero: heroEn,
                 featured: featuredEn,
                 about: aboutEn,
+                contact: contactEn,
             },
 
             es: {
@@ -38,6 +45,7 @@ i18next
                 hero: heroEs,
                 featured: featuredEs,
                 about: aboutEs,
+                contact: contactEs,
             },
         },
 

@@ -1,44 +1,50 @@
 import { backgroundData } from "./data";
 import * as S from "./styles";
+import { useTranslation } from "react-i18next";
 
 export const SectionAboutMe: React.FC = () => {
-    const interests = [
-        "Photography/Design",
-        "Modern Web Dev Ecosystems",
-        "System Design & UI Architechture",
-    ];
+    const interestKeys = ["photography", "development", "ui"];
+
+    const { t } = useTranslation("about");
 
     return (
         <S.AboutSection id="about" className="reveal reveal-up">
-            <S.SectionTitle>The Craftsman</S.SectionTitle>
+            <S.SectionTitle>{t("title")}</S.SectionTitle>
 
             <S.GridContainer>
                 <S.BackgroundStack>
-                    {backgroundData.map((pillar) => (
-                        <S.PillarItem key={pillar.id}>
-                            <S.IconContainer>
-                                <span className="material-symbols-outlined">
-                                    {pillar.icon}
-                                </span>
-                            </S.IconContainer>
+                    {backgroundData.map((pillar) => {
+                        const label = t(`pillars.${pillar.id}.label`);
+                        const description = t(
+                            `pillars.${pillar.id}.description`,
+                        );
 
-                            <S.PillarContent>
-                                <S.PillarTitle>{pillar.title}</S.PillarTitle>
+                        return (
+                            <S.PillarItem key={pillar.id}>
+                                <S.IconContainer>
+                                    <span className="material-symbols-outlined">
+                                        {pillar.icon}
+                                    </span>
+                                </S.IconContainer>
 
-                                <S.PillarText>{pillar.text}</S.PillarText>
-                            </S.PillarContent>
-                        </S.PillarItem>
-                    ))}
+                                <S.PillarContent>
+                                    <S.PillarTitle>{label}</S.PillarTitle>
+
+                                    <S.PillarText>{description}</S.PillarText>
+                                </S.PillarContent>
+                            </S.PillarItem>
+                        );
+                    })}
                 </S.BackgroundStack>
 
                 <S.AmoledCard>
-                    <S.CardLabel>Personal Interests</S.CardLabel>
+                    <S.CardLabel>{t("subtitle")}</S.CardLabel>
 
                     <S.InterestsList>
-                        {interests.map((interest, index) => (
+                        {interestKeys.map((key, index) => (
                             <S.InterestItem key={index}>
                                 <S.BulletDot />
-                                {interest}
+                                {t(`personal.${key}`)}
                             </S.InterestItem>
                         ))}
                     </S.InterestsList>

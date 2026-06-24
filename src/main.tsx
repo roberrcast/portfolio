@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import { theme } from "./styles/theme.ts";
 import { GlobalStyle } from "./styles/GlobalStyle.ts";
 import { BrowserRouter } from "react-router-dom";
+import "./i18n";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>

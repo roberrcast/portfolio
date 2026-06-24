@@ -1,17 +1,24 @@
 import * as S from "./styles";
 import { projectData } from "./data";
+import { useTranslation } from "react-i18next";
 
 export const FeaturedWorks: React.FC = () => {
+    const { t } = useTranslation("featured");
+
     return (
         <S.WorksSection id="works">
             <S.SectionTitle className="reveal reveal-up">
-                Featured Works
+                {t("sectionTitle")}
             </S.SectionTitle>
             <S.GridContainer>
                 {projectData.map((project, index) => {
                     // Determines which way the card should slide from
                     const revealDirection =
                         index % 2 === 0 ? "reveal-left" : "reveal-right";
+
+                    const title = t(`projects.${project.id}.title`);
+                    const altText = t(`projects.${project.id}.altText`);
+                    const description = t(`projects.${project.id}.description`);
 
                     return (
                         <S.ProjectCard
@@ -28,16 +35,14 @@ export const FeaturedWorks: React.FC = () => {
                                     src={project.image}
                                     role="img"
                                     loading="lazy"
-                                    alt={project.altText}
+                                    alt={altText}
                                 />
                             </S.ImageLinkWrapper>
 
                             <S.ContentArea>
                                 <div>
                                     <S.CardHeader>
-                                        <S.ProjectTitle>
-                                            {project.title}
-                                        </S.ProjectTitle>
+                                        <S.ProjectTitle>{title}</S.ProjectTitle>
 
                                         <S.ExternalLink href={project.link}>
                                             <span className="material-symbols-outlined">
@@ -47,7 +52,7 @@ export const FeaturedWorks: React.FC = () => {
                                     </S.CardHeader>
 
                                     <S.ProjectDescription>
-                                        {project.description}
+                                        {description}
                                     </S.ProjectDescription>
 
                                     <S.TechTagGroup>

@@ -1,14 +1,24 @@
 import * as S from "./styles";
 import { Link } from "react-router-dom";
-
-const NAV_LINKS = [
-    { id: 1, name: "Works", path: "/works" },
-    { id: 2, name: "About", path: "/about" },
-    { id: 3, name: "Contact", path: "/contact" },
-    { id: 4, name: "Stack", path: "/stack" },
-];
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+    const { t, i18n } = useTranslation("common");
+
+    const NAV_LINKS = [
+        { id: 1, name: t("nav.works"), path: "/works" },
+        { id: 2, name: t("nav.about"), path: "/about" },
+        { id: 3, name: t("nav.contact"), path: "/contact" },
+        { id: 4, name: t("nav.stack"), path: "/stack" },
+    ];
+
+    const toggleLanguage = () => {
+        const nextLang = i18n.language.startsWith("en") ? "es" : "en";
+        i18n.changeLanguage(nextLang);
+    };
+
+    const currentLabel = i18n.language.startsWith("es") ? "ES" : "EN";
+
     return (
         <S.Header>
             <S.NavContent>
@@ -29,14 +39,17 @@ export const Header = () => {
                 </S.NavLinks>
 
                 <S.ButtonsContainer>
-                    <S.HireMe>Hire Me</S.HireMe>
+                    <S.HireMe>{t("buttons.hireMe")}</S.HireMe>
 
-                    <S.LanguageToggle>
+                    <S.LanguageToggle
+                        onClick={toggleLanguage}
+                        aria-label={t("languageToggle")}
+                    >
                         <span className="material-symbols-outlined">
                             language
                         </span>
 
-                        <span>EN/ES</span>
+                        <span>{currentLabel}</span>
                     </S.LanguageToggle>
                 </S.ButtonsContainer>
             </S.NavContent>

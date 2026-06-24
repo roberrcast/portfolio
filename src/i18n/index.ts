@@ -6,11 +6,18 @@ import { en as commonEn, es as commonEs } from "./common";
 
 // Hero translations
 import { en as heroEn, es as heroEs } from "../components/Hero/translation";
-//Featured
+
+// Featured
 import {
     en as featuredEn,
     es as featuredEs,
 } from "../components/Featured/translation";
+
+// About me
+import {
+    en as aboutEn,
+    es as aboutEs,
+} from "../components/SectionAboutMe/transaltion";
 
 i18next
     .use(LanguageDetector)
@@ -23,12 +30,14 @@ i18next
                 common: commonEn,
                 hero: heroEn,
                 featured: featuredEn,
+                about: aboutEn,
             },
 
             es: {
                 common: commonEs,
                 hero: heroEs,
                 featured: featuredEs,
+                about: aboutEs,
             },
         },
 

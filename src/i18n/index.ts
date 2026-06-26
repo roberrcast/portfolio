@@ -19,11 +19,23 @@ import {
     es as aboutEs,
 } from "../components/SectionAboutMe/transaltion";
 
-// SectonContact
+// SectionContact
 import {
     en as contactEn,
     es as contactEs,
 } from "../components/SectionContact/translation";
+
+// Works Page
+import {
+    en as worksPageEn,
+    es as worksPageEs,
+} from "../pages/Works/translation";
+
+// Works Grid component (used in works page)
+import {
+    en as worksEn,
+    es as worksEs,
+} from "../components/WorksGrid/translation";
 
 i18next
     .use(LanguageDetector)
@@ -38,6 +50,8 @@ i18next
                 featured: featuredEn,
                 about: aboutEn,
                 contact: contactEn,
+                works: worksEn,
+                worksPage: worksPageEn,
             },
 
             es: {
@@ -46,6 +60,8 @@ i18next
                 featured: featuredEs,
                 about: aboutEs,
                 contact: contactEs,
+                works: worksEs,
+                worksPage: worksPageEs,
             },
         },
 

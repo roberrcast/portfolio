@@ -82,7 +82,7 @@ export const theme = {
 
         bodySm: {
             fontFamily: "'Mono', serif",
-            size: "14px",
+            size: "16px",
             weight: "400",
             lineHeight: "1.5",
         },

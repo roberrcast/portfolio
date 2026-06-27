@@ -140,6 +140,7 @@ export const ActionButton = styled.a<{ $isTextLink?: boolean }>`
     gap: 0.5rem;
     color: ${color("primary")};
     ${font("labelCaps")};
+    font-size: 14px !important;
     transition: all 0.2s ease-in-out;
 
     ${(props) =>

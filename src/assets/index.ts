@@ -1,3 +1,6 @@
+// Profile Picture
+import me from "./me.webp";
+
 // Thumbnails for the homepage
 import landing from "./landingpage1.webp";
 import ecommerce from "./origenygrano1.webp";
@@ -11,6 +14,7 @@ import worksEcommerce from "./origenygrano.webp";
 import worksPlaylist from "./playlist.webp";
 
 export {
+    me,
     landing,
     ecommerce,
     gallery,

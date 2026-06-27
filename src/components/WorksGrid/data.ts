@@ -26,7 +26,7 @@ export const worksData: Works[] = [
             "react",
             "typescript",
             "redux",
-            "styled-component",
+            "styled-components",
             "vite",
             "vitest",
         ],

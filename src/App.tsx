@@ -4,6 +4,7 @@ import { useReveal } from "./hooks/useReveal";
 import { Home } from "./pages/Home";
 import Footer from "./components/Footer";
 import { WorksPage } from "./pages/Works";
+import { About } from "./pages/About";
 
 function App() {
     useReveal();
@@ -14,6 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/works" element={<WorksPage />} />
+                    <Route path="/about" element={<About />} />
                 </Routes>
             </main>
             <Footer />

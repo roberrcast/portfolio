@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { color, font, spacing } from "../../styles/theme";
 
 export const FooterContainer = styled.footer`
+    width: 100%;
     max-width: ${spacing("containerMax")};
     margin: 0 auto;
     padding: ${spacing("sectionGap")} ${spacing("gutter")};

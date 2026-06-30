@@ -3,7 +3,7 @@ import { color, font, rounded, spacing } from "../../styles/theme";
 
 export const CardContainer = styled.div`
     widht: 100%;
-    max-width: ${spacing("containerMax")};
+    max-width: ${spacing("containerMaxVariant")};
     margin: 0 auto 8rem;
     padding: 2rem;
     background-color: ${color("surfaceContainerLowest")};
@@ -19,7 +19,7 @@ export const CardContainer = styled.div`
 `;
 
 export const Paragraph = styled.p`
-    ${font("bodyMd")};
+    ${font("bodyMdVariant")};
     color: ${color("onSurfaceVariant")};
     line-height: 1.625;
     margin: 0;
@@ -29,7 +29,7 @@ export const Paragraph = styled.p`
     }
 
     &:first-child {
-        ${font("headlineLg")};
+        ${font("headlineLgVariant")};
         color: ${color("onSurface")};
         line-height: 1.25;
 

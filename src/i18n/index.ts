@@ -49,6 +49,12 @@ import {
     es as aboutDescriptionEs,
 } from "../components/AboutMeDescription/translation";
 
+// About Interests
+import {
+    en as interestsEn,
+    es as interestsEs,
+} from "../components/AboutMeInterests/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -66,6 +72,7 @@ i18next
                 worksPage: worksPageEn,
                 aboutHeader: aboutHeaderEn,
                 aboutDescription: aboutDescriptionEn,
+                interests: interestsEn,
             },
 
             es: {
@@ -78,6 +85,7 @@ i18next
                 worksPage: worksPageEs,
                 aboutHeader: aboutHeaderEs,
                 aboutDescription: aboutDescriptionEs,
+                interests: interestsEs,
             },
         },
 

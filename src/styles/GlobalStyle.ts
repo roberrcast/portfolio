@@ -10,6 +10,12 @@ export const GlobalStyle = createGlobalStyle`
     font-display: swap;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 main {
     width: 100%;
     overflow-x: hidden;
+    flex: 1;
 }
 
 a {
@@ -32,6 +39,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 

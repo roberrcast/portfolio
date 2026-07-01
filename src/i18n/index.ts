@@ -17,7 +17,7 @@ import {
 import {
     en as aboutEn,
     es as aboutEs,
-} from "../components/SectionAboutMe/transaltion";
+} from "../components/SectionAboutMe/translation";
 
 // SectionContact
 import {
@@ -37,6 +37,24 @@ import {
     es as worksEs,
 } from "../components/WorksGrid/translation";
 
+// About me header component (used in about me page)
+import {
+    en as aboutHeaderEn,
+    es as aboutHeaderEs,
+} from "../components/AboutMeHeader/translation";
+
+// About Me Description
+import {
+    en as aboutDescriptionEn,
+    es as aboutDescriptionEs,
+} from "../components/AboutMeDescription/translation";
+
+// About Interests
+import {
+    en as interestsEn,
+    es as interestsEs,
+} from "../components/AboutMeInterests/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -52,6 +70,9 @@ i18next
                 contact: contactEn,
                 works: worksEn,
                 worksPage: worksPageEn,
+                aboutHeader: aboutHeaderEn,
+                aboutDescription: aboutDescriptionEn,
+                interests: interestsEn,
             },
 
             es: {
@@ -62,6 +83,9 @@ i18next
                 contact: contactEs,
                 works: worksEs,
                 worksPage: worksPageEs,
+                aboutHeader: aboutHeaderEs,
+                aboutDescription: aboutDescriptionEs,
+                interests: interestsEs,
             },
         },
 

@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import me from "../../assets/me.webp";
+import { me } from "../../assets/index.ts";
 import { useTranslation } from "react-i18next";
 
 export const Hero: React.FC = () => {

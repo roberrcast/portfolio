@@ -66,6 +66,13 @@ export const theme = {
             lineHeight: "1.3",
         },
 
+        headlineLgVariant: {
+            fontFamily: '"Inter", Arial, Helvetica, sans-serif',
+            size: "34px",
+            weight: "700",
+            lineHeight: "1.3",
+        },
+
         headlineLgMobile: {
             fontFamily: "'Inter', Arial, Helvetica, sans-serif",
             size: "24px",
@@ -77,6 +84,13 @@ export const theme = {
             fontFamily: "'Mono', serif, monospace",
             size: "16px",
             weight: "400",
+            lineHeight: "1.6",
+        },
+
+        bodyMdVariant: {
+            fontFamily: "'Mono', serif, monospace",
+            size: "17px",
+            weight: "500",
             lineHeight: "1.6",
         },
 
@@ -107,6 +121,7 @@ export const theme = {
 
     spacing: {
         containerMax: "768px",
+        containerMaxVariant: "708px",
         gutter: "1.5rem",
         marginMobile: "1rem",
         sectionGap: "4rem",

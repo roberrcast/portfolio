@@ -58,6 +58,12 @@ import {
 // About Page CTA
 import { en as ctaEn, es as ctaEs } from "../components/CTA/translation";
 
+// Stack Page hero
+import {
+    en as stackHeroEn,
+    es as stackHeroEs,
+} from "../components/StackDescription/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -77,6 +83,7 @@ i18next
                 aboutDescription: aboutDescriptionEn,
                 interests: interestsEn,
                 aboutCta: ctaEn,
+                stackHero: stackHeroEn,
             },
 
             es: {
@@ -91,6 +98,7 @@ i18next
                 aboutDescription: aboutDescriptionEs,
                 interests: interestsEs,
                 aboutCta: ctaEs,
+                stackHero: stackHeroEs,
             },
         },
 

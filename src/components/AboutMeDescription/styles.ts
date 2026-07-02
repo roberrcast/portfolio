@@ -4,7 +4,7 @@ import { color, font, rounded, spacing } from "../../styles/theme";
 export const CardContainer = styled.div`
     widht: 100%;
     max-width: ${spacing("containerMaxVariant")};
-    margin: 0 auto 8rem;
+    margin: 0 auto 5rem;
     padding: 2rem;
     background-color: ${color("surfaceContainerLowest")};
     border: 1px solid ${color("secondary")};

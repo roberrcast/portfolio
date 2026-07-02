@@ -3,7 +3,7 @@ import { color, font, rounded, spacing } from "../../styles/theme";
 
 export const SectionWrapper = styled.section`
     width: 100%;
-    max-width: ${spacing("containerMax")};
+    max-width: ${spacing("containerMaxVariant")};
     margin: 0 auto;
     padding-bottom: 4rem;
 `;

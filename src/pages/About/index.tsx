@@ -1,6 +1,7 @@
 import { AboutMeDescription } from "../../components/AboutMeDescription";
 import { AboutMeHeader } from "../../components/AboutMeHeader";
 import { Interests } from "../../components/AboutMeInterests";
+import { AboutMeCta } from "../../components/CTA";
 import { MainWrapper } from "./styles";
 
 export const About = () => {
@@ -9,6 +10,7 @@ export const About = () => {
             <AboutMeHeader />
             <AboutMeDescription />
             <Interests />
+            <AboutMeCta />
         </MainWrapper>
     );
 };

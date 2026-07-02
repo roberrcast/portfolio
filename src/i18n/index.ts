@@ -55,6 +55,9 @@ import {
     es as interestsEs,
 } from "../components/AboutMeInterests/translation";
 
+// About Page CTA
+import { en as ctaEn, es as ctaEs } from "../components/CTA/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -73,6 +76,7 @@ i18next
                 aboutHeader: aboutHeaderEn,
                 aboutDescription: aboutDescriptionEn,
                 interests: interestsEn,
+                aboutCta: ctaEn,
             },
 
             es: {
@@ -86,6 +90,7 @@ i18next
                 aboutHeader: aboutHeaderEs,
                 aboutDescription: aboutDescriptionEs,
                 interests: interestsEs,
+                aboutCta: ctaEs,
             },
         },
 

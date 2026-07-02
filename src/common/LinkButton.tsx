@@ -8,7 +8,9 @@ interface RouterLinkButtonProps
     icon?: string;
 }
 
-const StyledLink = styled.a<{ $variantConfig: ButtonVariant }>`
+const StyledLink = styled.a<{
+    $variantConfig: ButtonVariant;
+}>`
     ${(props) => buttonMixin(props.$variantConfig)}
 `;
 

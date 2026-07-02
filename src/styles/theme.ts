@@ -80,6 +80,13 @@ export const theme = {
             lineHeight: "1.3",
         },
 
+        buttonCta: {
+            fontFamily: "'Inter', Arial, Helvetica, sans-serif",
+            size: "20px",
+            weight: "600",
+            lineHeight: "1.3",
+        },
+
         bodyMd: {
             fontFamily: "'Mono', serif, monospace",
             size: "16px",

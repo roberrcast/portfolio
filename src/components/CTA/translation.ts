@@ -1,5 +1,5 @@
 export const en = {
-    title: "Let's build something intentional.",
+    title: "Let's build something meaningful.",
     buttonText: "Get in Touch",
 };
 

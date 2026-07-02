@@ -20,6 +20,7 @@ export const CtaHeading = styled.h2`
 export const ctaButtonTheme: ButtonVariant = {
     bg: "primaryContainer",
     text: "onPrimary",
+    font: "buttonCta",
     textTransform: "uppercase",
     fontWeight: "600",
 };

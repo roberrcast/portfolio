@@ -8,7 +8,9 @@ interface RouterLinkButtonProps extends React.ComponentProps<typeof Link> {
     icon?: string;
 }
 
-const StyledRouterLink = styled(Link)<{ $variantConfig: ButtonVariant }>`
+const StyledRouterLink = styled(Link)<{
+    $variantConfig: ButtonVariant;
+}>`
     ${(props) => buttonMixin(props.$variantConfig)}
 `;
 

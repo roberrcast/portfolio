@@ -37,13 +37,13 @@ import {
     es as worksEs,
 } from "../components/WorksGrid/translation";
 
-// About me header component (used in about me page)
+// About me header component (used in about page)
 import {
     en as aboutHeaderEn,
     es as aboutHeaderEs,
 } from "../components/AboutMeHeader/translation";
 
-// About Me Description
+// About Me Description (used in about page)
 import {
     en as aboutDescriptionEn,
     es as aboutDescriptionEs,
@@ -69,7 +69,7 @@ i18next
     .use(initReactI18next)
     .init({
         fallbackLng: "en",
-        // Registramos los namespaces aquí
+        // Register namespaces here
         resources: {
             en: {
                 common: commonEn,
@@ -102,14 +102,14 @@ i18next
             },
         },
 
-        // Opciones de configuración para i18next-browser-languagedetector
+        // Config options for i18next-browser-languagedetector
         detection: {
             order: ["localStorage", "navigator"],
             caches: ["localStorage"],
         },
 
         interpolation: {
-            escapeValue: false, // React ya protege contra XSS
+            escapeValue: false, // React already protects against XSS
         },
     });
 

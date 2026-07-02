@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { color, font, rounded, spacing } from "../../styles/theme";
-import { blur, hover, hoverFont } from "../../styles/mixins";
+import {
+    blur,
+    hover,
+    hoverFont,
+    type ButtonVariant,
+} from "../../styles/mixins";
 import { NavLink as RouterNavLink } from "react-router-dom";
 
 export const Header = styled.header`
@@ -88,26 +93,13 @@ export const NavLink = styled(RouterNavLink)`
     }
 `;
 
-export const HireMe = styled.button`
-    background-color: ${color("primaryContainer")};
-    color: ${color("onPrimaryContainer")};
-    ${font("labelCaps")};
-    padding: 0.5rem 1.5rem;
-    border-radius: ${rounded("default")};
-    border: none;
-    cursor: pointer;
-    transition:
-        transform 0.2s,
-        opacity 0.2s;
-
-    &:hover {
-        opacity: 0.9;
-    }
-
-    &:active {
-        transform: scale(0.95);
-    }
-`;
+export const hireMeButtonTheme: ButtonVariant = {
+    bg: "primaryContainer",
+    text: "onPrimaryContainer",
+    font: "labelCaps",
+    textTransform: "capitalize",
+    padding: "0.5rem 1.5rem",
+};
 
 export const LanguageToggle = styled.button`
     display: flex;

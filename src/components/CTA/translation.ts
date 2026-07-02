@@ -5,5 +5,5 @@ export const en = {
 
 export const es = {
     title: "Contruyamos algo con propósito.",
-    buttonText: "Ponte en Contacto",
+    buttonText: "Contáctame",
 };

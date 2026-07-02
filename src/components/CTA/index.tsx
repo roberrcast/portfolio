@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import { RouterLinkButton } from "../../common/LinkButton";
+import { RouterLinkButton } from "../../common/RouterLinkButton";
 import { useTranslation } from "react-i18next";
 
 export const AboutMeCta = () => {

@@ -19,7 +19,7 @@ export const useReveal = () => {
             });
         }, observerOptions);
 
-        const elements = document.querySelectorAll(".reveal");
+        const elements = document.querySelectorAll(".reveal, .reveal-fast");
         elements.forEach((el) => observer.observe(el));
 
         return () => observer.disconnect();

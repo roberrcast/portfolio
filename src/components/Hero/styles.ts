@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { color, font, rounded, spacing } from "../../styles/theme";
+import type { ButtonVariant } from "../../styles/mixins";
 
 export const HeroContainer = styled.section`
     display: flex;
@@ -79,27 +80,10 @@ export const ButtonWrapper = styled.div`
     padding-top: 1rem;
 `;
 
-export const PrimaryButton = styled.a`
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: ${color("primaryContainer")};
-    color: ${color("onPrimary")};
-    ${font("labelCaps")};
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    padding: 0.75rem 2rem;
-    border-radius: ${rounded("default")};
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media (hover: hover) {
-        &:hover {
-            transform: scale(1.02);
-        }
-    }
-
-    .material-symbols-outlined {
-        font-size: 14px;
-    }
-`;
+export const ctaButtonTheme: ButtonVariant = {
+    bg: "primaryContainer",
+    text: "onPrimary",
+    font: "labelCaps",
+    textTransform: "uppercase",
+    padding: "0.75rem 2rem",
+};

@@ -42,8 +42,10 @@ export const hoverCursor = () => css`
 export type ButtonVariant = {
     bg: keyof ThemeType["colors"];
     text: keyof ThemeType["colors"];
+    font: keyof ThemeType["typography"];
     textTransform?: string;
     fontWeight?: string;
+    padding?: string;
     border?: keyof ThemeType["colors"];
     hoverBg?: keyof ThemeType["colors"];
 };
@@ -51,10 +53,11 @@ export type ButtonVariant = {
 // Mixin for reusable button
 export const buttonMixin = (variant: ButtonVariant) => css`
     display: inline-flex;
+    ${font(variant.font)};
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    padding: 1rem 2rem;
+    padding: ${variant.padding ?? "1rem 2rem"};
     border-radius: ${rounded("full")};
     text-transform: ${variant.textTransform};
     font-weight: ${variant.fontWeight};

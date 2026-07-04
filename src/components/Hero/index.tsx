@@ -1,6 +1,7 @@
 import * as S from "./styles";
 import { me } from "../../assets/index.ts";
 import { useTranslation } from "react-i18next";
+import LinkButton from "../../common/LinkButton.tsx";
 
 export const Hero: React.FC = () => {
     const { t } = useTranslation("hero");
@@ -20,12 +21,12 @@ export const Hero: React.FC = () => {
             </S.TextWrapper>
 
             <S.ButtonWrapper>
-                <S.PrimaryButton href="#works">
-                    {t("viewProject")}
-                    <span className="material-symbols-outlined">
-                        arrow_downward
-                    </span>
-                </S.PrimaryButton>
+                <LinkButton
+                    href="#works"
+                    text={t("viewProject")}
+                    icon="arrow_downward"
+                    variant={S.ctaButtonTheme}
+                />
             </S.ButtonWrapper>
         </S.HeroContainer>
     );

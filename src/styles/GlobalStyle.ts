@@ -50,6 +50,19 @@ body {
     pointer-events: none;
 }
 
+.reveal-fast {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out;
+    pointer-events: none;
+}
+
+.reveal-fast.active {
+    opacity: 1;
+    transform: translate(0, 0);
+    pointer-events: auto;
+}
+
 .reveal.active {
     opacity: 1;
     transform: translate(0, 0);

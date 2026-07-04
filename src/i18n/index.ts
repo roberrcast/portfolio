@@ -37,13 +37,13 @@ import {
     es as worksEs,
 } from "../components/WorksGrid/translation";
 
-// About me header component (used in about me page)
+// About me header component (used in about page)
 import {
     en as aboutHeaderEn,
     es as aboutHeaderEs,
 } from "../components/AboutMeHeader/translation";
 
-// About Me Description
+// About Me Description (used in about page)
 import {
     en as aboutDescriptionEn,
     es as aboutDescriptionEs,
@@ -58,12 +58,24 @@ import {
 // About Page CTA
 import { en as ctaEn, es as ctaEs } from "../components/CTA/translation";
 
+// Stack Page hero
+import {
+    en as stackHeroEn,
+    es as stackHeroEs,
+} from "../components/StackDescription/translation";
+
+// Stack Grid Tools
+import {
+    en as stackToolsEn,
+    es as stackToolsEs,
+} from "../pages/Stack/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         fallbackLng: "en",
-        // Registramos los namespaces aquí
+        // Register namespaces here
         resources: {
             en: {
                 common: commonEn,
@@ -77,6 +89,8 @@ i18next
                 aboutDescription: aboutDescriptionEn,
                 interests: interestsEn,
                 aboutCta: ctaEn,
+                stackHero: stackHeroEn,
+                stackTools: stackToolsEn,
             },
 
             es: {
@@ -91,17 +105,19 @@ i18next
                 aboutDescription: aboutDescriptionEs,
                 interests: interestsEs,
                 aboutCta: ctaEs,
+                stackHero: stackHeroEs,
+                stackTools: stackToolsEs,
             },
         },
 
-        // Opciones de configuración para i18next-browser-languagedetector
+        // Config options for i18next-browser-languagedetector
         detection: {
             order: ["localStorage", "navigator"],
             caches: ["localStorage"],
         },
 
         interpolation: {
-            escapeValue: false, // React ya protege contra XSS
+            escapeValue: false, // React already protects against XSS
         },
     });
 

@@ -7,7 +7,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     icon?: string;
 }
 
-const StyledButton = styled.button<{ $variantConfig: ButtonVariant }>`
+const StyledButton = styled.button<{
+    $variantConfig: ButtonVariant;
+    $padding?: string;
+}>`
     ${(props) => buttonMixin(props.$variantConfig)}
 `;
 

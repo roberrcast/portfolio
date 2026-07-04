@@ -80,6 +80,13 @@ export const theme = {
             lineHeight: "1.3",
         },
 
+        buttonCta: {
+            fontFamily: "'Inter', Arial, Helvetica, sans-serif",
+            size: "20px",
+            weight: "600",
+            lineHeight: "1.3",
+        },
+
         bodyMd: {
             fontFamily: "'Mono', serif, monospace",
             size: "16px",
@@ -104,6 +111,14 @@ export const theme = {
         labelCaps: {
             fontFamily: "'Inter', Arial, Helvetica, sans-serif",
             size: "12px",
+            weight: "600",
+            lineHeight: "1",
+            letterSpacing: "0.1em",
+        },
+
+        labelCapsVariant: {
+            fontFamily: "'Inter', Arial, Helvetica, sans-serif",
+            size: "16px",
             weight: "600",
             lineHeight: "1",
             letterSpacing: "0.1em",

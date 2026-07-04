@@ -1,6 +1,7 @@
 import * as S from "./styles";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import RouterLinkButton from "../../common/RouterLinkButton";
 
 export const Header = () => {
     const { t, i18n } = useTranslation("common");
@@ -23,7 +24,7 @@ export const Header = () => {
         <S.Header>
             <S.NavContent>
                 <S.Logo>
-                    <Link to={"/"}>{"{ IO }"}</Link>
+                    <Link to={"/"}>{"{ io }"}</Link>
                 </S.Logo>
 
                 <S.NavLinks>
@@ -39,7 +40,11 @@ export const Header = () => {
                 </S.NavLinks>
 
                 <S.ButtonsContainer>
-                    <S.HireMe>{t("buttons.hireMe")}</S.HireMe>
+                    <RouterLinkButton
+                        to={"/contact"}
+                        text={t("buttons.hireMe")}
+                        variant={S.hireMeButtonTheme}
+                    />
 
                     <S.LanguageToggle
                         onClick={toggleLanguage}

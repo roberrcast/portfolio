@@ -115,6 +115,14 @@ export const theme = {
             lineHeight: "1",
             letterSpacing: "0.1em",
         },
+
+        labelCapsVariant: {
+            fontFamily: "'Inter', Arial, Helvetica, sans-serif",
+            size: "16px",
+            weight: "600",
+            lineHeight: "1",
+            letterSpacing: "0.1em",
+        },
     },
 
     rounded: {

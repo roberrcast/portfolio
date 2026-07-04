@@ -64,6 +64,12 @@ import {
     es as stackHeroEs,
 } from "../components/StackDescription/translation";
 
+// Stack Grid Tools
+import {
+    en as stackToolsEn,
+    es as stackToolsEs,
+} from "../pages/Stack/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -84,6 +90,7 @@ i18next
                 interests: interestsEn,
                 aboutCta: ctaEn,
                 stackHero: stackHeroEn,
+                stackTools: stackToolsEn,
             },
 
             es: {
@@ -99,6 +106,7 @@ i18next
                 interests: interestsEs,
                 aboutCta: ctaEs,
                 stackHero: stackHeroEs,
+                stackTools: stackToolsEs,
             },
         },
 

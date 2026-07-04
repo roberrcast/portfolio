@@ -1,4 +1,5 @@
-import bashIcon from "../../assets/bash.svg";
+import bashIcon from "../../assets/bash.png";
+import githubIcon from "../../assets/github.webp";
 
 // Front End stack
 
@@ -51,6 +52,8 @@ const vitest =
 const postman =
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg";
 
+const gitHub = githubIcon;
+
 export {
     html,
     css,
@@ -68,4 +71,5 @@ export {
     nvim,
     vitest,
     postman,
+    gitHub,
 };

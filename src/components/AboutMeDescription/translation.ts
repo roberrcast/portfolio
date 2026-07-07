@@ -1,5 +1,3 @@
-import { paragraphs } from "./data";
-
 export const en = {
     paragraphs: {
         block1: {

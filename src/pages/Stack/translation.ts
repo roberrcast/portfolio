@@ -34,9 +34,9 @@ export const es = {
     workflow: "Flujo de Trabajo y Entorno",
 
     description: {
-        block1: "Como desarrollador de front-end, me baso en los <span>fundamentos modernos</span> de React y TypeScript, aprovechando Vite por su increíble velocidad de desarrollo y Redux para una gestión de estado robusta y predecible en aplicaciones complejas.",
+        block1: "Como desarrollador front-end, me baso en los <span>fundamentos modernos</span> de React y TypeScript, aprovechando Vite por su increíble velocidad de desarrollo y Redux para una gestión de estado robusta y predecible en aplicaciones complejas.",
 
-        block2: "Mi flujo de trabajo está diseñado para ofrecer precisión y eficiencia. Utilizo Neovim y Bash para crear un entorno optimizado y centrado en la terminal, al mientras que me apoyo en Vitest y Postman para garantizar que cada línea de código y cada interacción con la API se validen minuciosamente.",
+        block2: "Mi flujo de trabajo está diseñado para ofrecer precisión y eficiencia. Utilizo Neovim y Bash para crear un entorno optimizado y centrado en la terminal, mientras que me apoyo en Vitest y Postman para garantizar que cada línea de código y cada interacción con la API se validen minuciosamente.",
     },
 
     stack: {

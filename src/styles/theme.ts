@@ -31,6 +31,7 @@ export const theme = {
         onTertiaryContainer: "#795510",
         error: "#ffb4ab",
         onError: "#690005",
+        onSuccess: "#22c55e",
         errorContainer: "#93000a",
         onErrorContainer: "#ffdad6",
         primaryFixed: "#8ff4e7",
@@ -96,6 +97,13 @@ export const theme = {
 
         bodyMdVariant: {
             fontFamily: "'Mono', serif, monospace",
+            size: "17px",
+            weight: "500",
+            lineHeight: "1.6",
+        },
+
+        bodyMdVariantInter: {
+            fontFamily: "'Inter', Arial, Helvetica, sans-serif",
             size: "17px",
             weight: "500",
             lineHeight: "1.6",

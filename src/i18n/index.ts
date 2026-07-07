@@ -70,6 +70,15 @@ import {
     es as stackToolsEs,
 } from "../pages/Stack/translation";
 
+// Form label and placeholders
+import { en as formEn, es as formEs } from "../components/Form/translation";
+
+// Contact Page heading and subheading
+import {
+    en as contactPageEn,
+    es as contactPageEs,
+} from "../pages/Contact/translations";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -91,6 +100,8 @@ i18next
                 aboutCta: ctaEn,
                 stackHero: stackHeroEn,
                 stackTools: stackToolsEn,
+                form: formEn,
+                contactPage: contactPageEn,
             },
 
             es: {
@@ -107,6 +118,8 @@ i18next
                 aboutCta: ctaEs,
                 stackHero: stackHeroEs,
                 stackTools: stackToolsEs,
+                form: formEs,
+                contactPage: contactPageEs,
             },
         },
 

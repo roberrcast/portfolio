@@ -117,3 +117,9 @@ export const LanguageToggle = styled.button`
         transform: scale(0.95);
     }
 `;
+
+export const LogoMenuContainer = styled.div`
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+`;

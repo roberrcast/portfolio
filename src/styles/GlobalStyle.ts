@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #root {
     display: flex;
     flex-direction: column;

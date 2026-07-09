@@ -89,6 +89,7 @@ export const NavLink = styled(RouterNavLink)`
     &.active {
         color: ${color("inverseSurface")};
         font-weight: 700;
+        pointer-events: none;
         border-bottom: 2px solid ${color("primary")};
     }
 `;
@@ -102,6 +103,7 @@ export const hireMeButtonTheme: ButtonVariant = {
 };
 
 export const LanguageToggle = styled.button`
+    ${font("labelCaps")};
     display: flex;
     padding: 0.5rem 0.75rem;
     color: ${color("primary")};
@@ -113,7 +115,17 @@ export const LanguageToggle = styled.button`
     ${hover("primary", "0D")};
     align-items: center;
 
+    span {
+        font-size: 15px;
+    }
+
     &:active {
         transform: scale(0.95);
     }
+`;
+
+export const LogoMenuContainer = styled.div`
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 `;

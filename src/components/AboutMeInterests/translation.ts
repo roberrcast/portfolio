@@ -5,7 +5,7 @@ export const en = {
         photography: {
             title: "DSLR Photography",
             description:
-                "Finding the decisive moment through a minimalist lens. Focus, apperture, and intent.",
+                "Fine-tuning focus and aperture to turn everyday moments into captivating shots.",
             tags: ["philosophy"],
         },
 
@@ -32,7 +32,7 @@ export const es = {
         photography: {
             title: "Fotografía con DSLR",
             description:
-                "Encontrar el momento decisivo a través de un lente minimalista. Enfoque, apertura e intención.",
+                "Ajustar con precisión el enfoque y la apertura para convertir los momentos cotidianos en fotos cautivadoras.",
             tags: ["filosofía"],
         },
 

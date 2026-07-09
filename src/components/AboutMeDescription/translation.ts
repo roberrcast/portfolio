@@ -12,7 +12,7 @@ export const en = {
 
         block3: {
             paragraph:
-                "What finally got me into front-end was realizing that this was something I could actually try my hand at, so I took the leap and started diving deep into this world. Why front-end specifically? I’ve always had a keen eye for visual arts and aesthetics, so what better way to combine those worlds than making websites look beautiful while keeping them highly functional?",
+                "What finally got me into front-end was realizing that this was something I could actually try my hand at, so I took the leap and started diving deep into this world. Why front-end specifically? I’ve always had a keen eye for visual arts and aesthetics, so what better way to combine those worlds than making websites look beautiful while keeping them highly functional? I'm still very much on the learning curve, continuously expanding my technical toolkit, but every challenge only makes me more eager to master the craft.",
         },
 
         block4: {
@@ -34,7 +34,7 @@ export const es = {
         },
         block3: {
             paragraph:
-                "Lo que finalmente despertó mi interés por el desarrollo front-end fue darme cuenta de que era algo que realmente podría hacer, así que me lancé y comencé a sumergirme de lleno en este mundo. ¿Por qué el desarrollo front-end específicamente? Siempre he tenido un gran interés por las artes visuales y la estética, así que, ¿qué mejor manera de combinar esos mundos que creando sitios web que sean a la vez hermosos y altamente funcionales?",
+                "Lo que finalmente despertó mi interés por el desarrollo front-end fue darme cuenta de que era algo que realmente podría hacer, así que me lancé y comencé a sumergirme de lleno en este mundo. ¿Por qué el desarrollo front-end específicamente? Siempre he tenido un gran interés por las artes visuales y la estética, así que, ¿qué mejor manera de combinar esos mundos que creando sitios web que sean a la vez hermosos y altamente funcionales? Todavía estoy en plena etapa de aprendizaje, ampliando continuamente mis herramientas técnicas, pero cada reto solo me hace tener más ganas de dominar este oficio.",
         },
         block4: {
             paragraph:

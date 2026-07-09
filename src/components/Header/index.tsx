@@ -2,16 +2,13 @@ import * as S from "./styles";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import RouterLinkButton from "../../common/RouterLinkButton";
+import { useNavLinks } from "../../hooks/useNavLinks";
+import MobileMenu from "../MobileMenu";
 
 export const Header = () => {
     const { t, i18n } = useTranslation("common");
 
-    const NAV_LINKS = [
-        { id: 1, name: t("nav.works"), path: "/works" },
-        { id: 2, name: t("nav.about"), path: "/about" },
-        { id: 3, name: t("nav.stack"), path: "/stack" },
-        { id: 4, name: t("nav.contact"), path: "/contact" },
-    ];
+    const NAV_LINKS = useNavLinks();
 
     const toggleLanguage = () => {
         const nextLang = i18n.language.startsWith("en") ? "es" : "en";
@@ -23,9 +20,13 @@ export const Header = () => {
     return (
         <S.Header>
             <S.NavContent>
-                <S.Logo>
-                    <Link to={"/"}>{"{ io }"}</Link>
-                </S.Logo>
+                <S.LogoMenuContainer>
+                    <S.Logo>
+                        <Link to={"/"}>{"{ io }"}</Link>
+                    </S.Logo>
+
+                    <MobileMenu />
+                </S.LogoMenuContainer>
 
                 <S.NavLinks>
                     <S.List>
@@ -51,7 +52,7 @@ export const Header = () => {
                         aria-label={t("languageToggle")}
                     >
                         <span className="material-symbols-outlined">
-                            language
+                            translate
                         </span>
 
                         <span>{currentLabel}</span>

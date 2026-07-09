@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { color, font, rounded } from "../../styles/theme";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 /* Burger Wrapper Popup Element */
 export const BurgerPopup = styled.div`
@@ -30,7 +30,7 @@ export const BurgerButton = styled.div<{ $isOpen: boolean }>`
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.7s ease-in-out;
     outline: 0.125rem solid transparent;
     outline-offset: 0;
 
@@ -40,7 +40,7 @@ export const BurgerButton = styled.div<{ $isOpen: boolean }>`
         background: ${color("primary")};
         border-radius: 0.1875rem;
         position: absolute;
-        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     /* Top Line Placement & Morph */
@@ -108,7 +108,7 @@ export const NavDropdown = styled.nav<{ $isOpen: boolean }>`
     visibility: hidden;
     transform: translateY(-12px);
     pointer-events: none;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 
     /* Triggered State */
     ${(props) =>
@@ -127,7 +127,7 @@ export const MenuItem = styled.div`
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(NavLink)`
     display: block;
     padding: 0.875rem 1.5rem;
     width: 100%;
@@ -163,5 +163,11 @@ export const MenuLink = styled(Link)`
                 transform-origin: right;
             }
         }
+    }
+
+    &.active {
+        color: ${color("tertiaryFixedDim")};
+        font-weight: 700;
+        pointer-events: none;
     }
 `;

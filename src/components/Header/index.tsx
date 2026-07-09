@@ -52,7 +52,7 @@ export const Header = () => {
                         aria-label={t("languageToggle")}
                     >
                         <span className="material-symbols-outlined">
-                            language
+                            translate
                         </span>
 
                         <span>{currentLabel}</span>

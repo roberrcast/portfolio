@@ -1,11 +1,11 @@
 export const en = {
     heading: "Contact",
-    subHeading: "Let's build something with meaning",
+    subHeading: "Drop me a line below",
     direct: "Direct Communication",
 };
 
 export const es = {
     heading: "Contactar",
-    subHeading: "Construyamos algo con propósito",
+    subHeading: "Dejáme un mensaje aquí abajo",
     direct: "Comunicación Directa",
 };

@@ -56,7 +56,7 @@ import {
 } from "../components/AboutMeInterests/translation";
 
 // About Page CTA
-import { en as ctaEn, es as ctaEs } from "../components/CTA/translation";
+import { en as ctaEn, es as ctaEs } from "../components/AboutMeCTA/translation";
 
 // Stack Page hero
 import {

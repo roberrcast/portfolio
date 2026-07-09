@@ -1,5 +1,5 @@
 export const en = {
-    title: "The Craftsman",
+    title: "Craftsmanship",
     subtitle: "Personal Interests",
     pillars: {
         dev: {

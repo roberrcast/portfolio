@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import RouterLinkButton from "../../common/RouterLinkButton";
 import { useNavLinks } from "../../hooks/useNavLinks";
 import MobileMenu from "../MobileMenu";
+import { LanguageToggle } from "../../LanguageToggle";
 
 export const Header = () => {
     const { t, i18n } = useTranslation("common");
@@ -47,16 +48,18 @@ export const Header = () => {
                         variant={S.hireMeButtonTheme}
                     />
 
-                    <S.LanguageToggle
-                        onClick={toggleLanguage}
-                        aria-label={t("languageToggle")}
-                    >
-                        <span className="material-symbols-outlined">
-                            translate
-                        </span>
+                    {/* <S.LanguageToggle */}
+                    {/*     onClick={toggleLanguage} */}
+                    {/*     aria-label={t("languageToggle")} */}
+                    {/* > */}
+                    {/*     <span className="material-symbols-outlined"> */}
+                    {/*         translate */}
+                    {/*     </span> */}
+                    {/**/}
+                    {/*     <span>{currentLabel}</span> */}
+                    {/* </S.LanguageToggle> */}
 
-                        <span>{currentLabel}</span>
-                    </S.LanguageToggle>
+                    <LanguageToggle />
                 </S.ButtonsContainer>
             </S.NavContent>
         </S.Header>

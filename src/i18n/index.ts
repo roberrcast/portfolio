@@ -85,6 +85,12 @@ import {
     es as hireMeHeroEs,
 } from "../HireMeHero/translation";
 
+// HireMe Timeline
+import {
+    en as hireMeTimelineEn,
+    es as hireMeTimelineEs,
+} from "../components/HireMeTimeLine/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -109,6 +115,7 @@ i18next
                 form: formEn,
                 contactPage: contactPageEn,
                 hireMeHero: hireMeHeroEn,
+                hireMeTimeline: hireMeTimelineEn,
             },
 
             es: {
@@ -128,6 +135,7 @@ i18next
                 form: formEs,
                 contactPage: contactPageEs,
                 hireMeHero: hireMeHeroEs,
+                hireMeTimeline: hireMeTimelineEs,
             },
         },
 

@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { color, font, spacing } from "../styles/theme";
 
 export const HeroSection = styled.section`
-    max-width: ${spacing("containerMax")};
-    margin: 0 auto ${spacing("sectionGap")} auto;
+    margin-bottom: ${spacing("sectionGap")};
     text-align: center;
 
     @media (min-width: 768px) {
@@ -48,15 +47,12 @@ export const ButtonContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
     justify-content: center;
 
-    @media (min-width: 480px) {
+    @media (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    @media (min-width: 768px) {
         justify-content: flex-start;
     }
 `;
@@ -84,7 +80,7 @@ export const CVButton = styled.a`
 
     @media (hover: hover) {
         &:hover {
-            border-color: rgba(181, 255, 244, 0.5);
+            border-color: ${color("primary")};
         }
     }
 

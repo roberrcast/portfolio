@@ -8,6 +8,7 @@ import { WorksPage } from "./pages/Works";
 import { About } from "./pages/About";
 import { StackPage } from "./pages/Stack";
 import { Contact } from "./pages/Contact";
+import { HireMe } from "./pages/HireMe";
 
 const Wrapper = ({ children }: PropsWithChildren) => {
     const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/about" element={<About />} />
                         <Route path="/stack" element={<StackPage />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/hire" element={<HireMe />} />
                     </Routes>
                 </Wrapper>
             </main>

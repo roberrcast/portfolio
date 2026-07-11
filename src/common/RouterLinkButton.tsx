@@ -6,6 +6,7 @@ interface RouterLinkButtonProps extends React.ComponentProps<typeof Link> {
     text: string;
     variant: ButtonVariant;
     icon?: string;
+    iconPosition?: "left" | "right";
 }
 
 const StyledRouterLink = styled(Link)<{
@@ -18,12 +19,18 @@ export const RouterLinkButton: React.FC<RouterLinkButtonProps> = ({
     text,
     variant,
     icon,
+    iconPosition = "right",
     ...rest
 }) => {
     return (
         <StyledRouterLink $variantConfig={variant} {...rest}>
+            {icon && iconPosition === "left" && (
+                <span className="material-symbols-outlined">{icon}</span>
+            )}
             {text}
-            {icon && <span className="material-symbols-outlined">{icon}</span>}
+            {icon && iconPosition === "right" && (
+                <span className="material-symbols-outlined">{icon}</span>
+            )}
         </StyledRouterLink>
     );
 };

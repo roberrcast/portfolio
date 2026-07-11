@@ -79,6 +79,27 @@ import {
     es as contactPageEs,
 } from "../pages/Contact/translations";
 
+// HireMe Hero
+import {
+    en as hireMeHeroEn,
+    es as hireMeHeroEs,
+} from "../HireMeHero/translation";
+
+// HireMe Timeline
+import {
+    en as hireMeTimelineEn,
+    es as hireMeTimelineEs,
+} from "../components/HireMeTimeLine/translation";
+
+// Why Hire Me?
+import {
+    en as whyHireMeEn,
+    es as whyHireMeEs,
+} from "../components/WhyHireMe/translation";
+
+// Hire Me Cta
+import { en as hireMeCtaEn, es as hireMeCtaEs } from "../HireMeCTA/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -102,6 +123,10 @@ i18next
                 stackTools: stackToolsEn,
                 form: formEn,
                 contactPage: contactPageEn,
+                hireMeHero: hireMeHeroEn,
+                hireMeTimeline: hireMeTimelineEn,
+                whyHire: whyHireMeEn,
+                hireMeCta: hireMeCtaEn,
             },
 
             es: {
@@ -120,6 +145,10 @@ i18next
                 stackTools: stackToolsEs,
                 form: formEs,
                 contactPage: contactPageEs,
+                hireMeHero: hireMeHeroEs,
+                hireMeTimeline: hireMeTimelineEs,
+                whyHire: whyHireMeEs,
+                hireMeCta: hireMeCtaEs,
             },
         },
 

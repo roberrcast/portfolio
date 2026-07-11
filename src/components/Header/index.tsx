@@ -7,16 +7,10 @@ import MobileMenu from "../MobileMenu";
 import { LanguageToggle } from "../../LanguageToggle";
 
 export const Header = () => {
-    const { t, i18n } = useTranslation("common");
+    const { t } = useTranslation("common");
+    /* Add i18n to this if you want to define the toggle here */
 
     const NAV_LINKS = useNavLinks();
-
-    const toggleLanguage = () => {
-        const nextLang = i18n.language.startsWith("en") ? "es" : "en";
-        i18n.changeLanguage(nextLang);
-    };
-
-    const currentLabel = i18n.language.startsWith("es") ? "ES" : "EN";
 
     return (
         <S.Header>
@@ -43,21 +37,10 @@ export const Header = () => {
 
                 <S.ButtonsContainer>
                     <RouterLinkButton
-                        to={"/contact"}
+                        to={"/hire"}
                         text={t("buttons.hireMe")}
                         variant={S.hireMeButtonTheme}
                     />
-
-                    {/* <S.LanguageToggle */}
-                    {/*     onClick={toggleLanguage} */}
-                    {/*     aria-label={t("languageToggle")} */}
-                    {/* > */}
-                    {/*     <span className="material-symbols-outlined"> */}
-                    {/*         translate */}
-                    {/*     </span> */}
-                    {/**/}
-                    {/*     <span>{currentLabel}</span> */}
-                    {/* </S.LanguageToggle> */}
 
                     <LanguageToggle />
                 </S.ButtonsContainer>

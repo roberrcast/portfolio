@@ -91,6 +91,12 @@ import {
     es as hireMeTimelineEs,
 } from "../components/HireMeTimeLine/translation";
 
+// Why Hire Me?
+import {
+    en as whyHireMeEn,
+    es as whyHireMeEs,
+} from "../components/WhyHireMe/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -116,6 +122,7 @@ i18next
                 contactPage: contactPageEn,
                 hireMeHero: hireMeHeroEn,
                 hireMeTimeline: hireMeTimelineEn,
+                whyHire: whyHireMeEn,
             },
 
             es: {
@@ -136,6 +143,7 @@ i18next
                 contactPage: contactPageEs,
                 hireMeHero: hireMeHeroEs,
                 hireMeTimeline: hireMeTimelineEs,
+                whyHire: whyHireMeEs,
             },
         },
 

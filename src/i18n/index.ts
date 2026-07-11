@@ -97,6 +97,9 @@ import {
     es as whyHireMeEs,
 } from "../components/WhyHireMe/translation";
 
+// Hire Me Cta
+import { en as hireMeCtaEn, es as hireMeCtaEs } from "../HireMeCTA/translation";
+
 i18next
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -123,6 +126,7 @@ i18next
                 hireMeHero: hireMeHeroEn,
                 hireMeTimeline: hireMeTimelineEn,
                 whyHire: whyHireMeEn,
+                hireMeCta: hireMeCtaEn,
             },
 
             es: {
@@ -144,6 +148,7 @@ i18next
                 hireMeHero: hireMeHeroEs,
                 hireMeTimeline: hireMeTimelineEs,
                 whyHire: whyHireMeEs,
+                hireMeCta: hireMeCtaEs,
             },
         },
 

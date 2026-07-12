@@ -10,10 +10,10 @@ export const en = {
         },
 
         system: {
-            title: "System Design",
+            title: "Good Cup of Coffee",
             description:
-                "The architecture of the invisible. How human systems inform technical scalability.",
-            tags: ["structure"],
+                "Honestly, a good cup goes a long way, whether just for enjoyment or to fuel my coding sessions, a good cup is always by my side.",
+            tags: ["joe"],
         },
 
         artMusic: {
@@ -37,10 +37,10 @@ export const es = {
         },
 
         system: {
-            title: "Diseño de Sistemas",
+            title: "Una buena taza de café",
             description:
-                "La arquitectura de lo invisible. Cómo los sistemas humanos influyen en la escalabilidad técnica.",
-            tags: ["estructura"],
+                "La verdad es que una buena taza de café ayuda mucho, ya sea simplemente para disfrutar o para darme energía durante mis sesiones de programación; una buena taza de café siempre está a mi lado.",
+            tags: ["café"],
         },
 
         artMusic: {

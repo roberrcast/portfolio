@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, font, spacing } from "../styles/theme";
+import { spacing, color, font } from "../../styles/theme";
 
 export const HeroSection = styled.section`
     margin-bottom: ${spacing("sectionGap")};

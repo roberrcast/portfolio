@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styles";
-import RouterLinkButton from "../common/RouterLinkButton";
+import RouterLinkButton from "../../common/RouterLinkButton";
 
 export const HireMeCta = () => {
     const { t } = useTranslation("hireMeCta");

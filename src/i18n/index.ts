@@ -83,7 +83,7 @@ import {
 import {
     en as hireMeHeroEn,
     es as hireMeHeroEs,
-} from "../HireMeHero/translation";
+} from "../components/HireMeHero/translation";
 
 // HireMe Timeline
 import {
@@ -98,7 +98,10 @@ import {
 } from "../components/WhyHireMe/translation";
 
 // Hire Me Cta
-import { en as hireMeCtaEn, es as hireMeCtaEs } from "../HireMeCTA/translation";
+import {
+    en as hireMeCtaEn,
+    es as hireMeCtaEs,
+} from "../components/HireMeCTA/translation";
 
 i18next
     .use(LanguageDetector)

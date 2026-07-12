@@ -1,7 +1,7 @@
 import { HireMeTimeline } from "../../components/HireMeTimeLine";
 import { WhyHireMe } from "../../components/WhyHireMe";
-import { HireMeCta } from "../../HireMeCTA";
-import { HireMeHero } from "../../HireMeHero";
+import { HireMeCta } from "../../components/HireMeCTA";
+import { HireMeHero } from "../../components/HireMeHero";
 import { MainWrapper } from "./styles";
 
 export const HireMe = () => {

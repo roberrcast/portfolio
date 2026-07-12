@@ -1,15 +1,13 @@
 export const en = {
     title: "Crafting with",
     accent: "Digital Precision.",
-    badge: "Tools & Workflow",
     description:
-        "As a Digital Craftsman, I approach software with the same intentionality as a luthier or a watchmaker. My commitment lies in selecting modern, scalable tools that prioritize performance, type-safety, and elegant user experiences.",
+        "These are the tools and workflow I use to build fast, structured interfaces. I focus on setups that enforce strict type-safety, scale cleanly across responsive layouts, and keep the user experience completely uncompromised.",
 };
 
 export const es = {
     title: "Creación con",
     accent: "Precisión Digital.",
-    badge: "Herramientas y Flujo de Trabajo",
     description:
-        "Como artesano digital, abordo el software con la misma intención que un artesano de instrumentos musicales o un relojero. Mi compromiso radica en seleccionar herramientas modernas y escalables que prioricen el rendimiento, la seguridad de tipos y una experiencia de usuario elegante.",
+        "Estas son las herramientas y el flujo de trabajo que utilizo para crear interfaces rápidas y estructuradas. Me enfoco en configuraciones que garantizan una seguridad de tipos estricta, se adaptan de manera ordenada a los diseños responsivos y mantienen la experiencia del usuario sin ningún tipo de compromiso.",
 };

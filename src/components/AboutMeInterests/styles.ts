@@ -112,6 +112,10 @@ export const InterestTag = styled.span`
     ${font("labelCaps")};
     font-size: 10px;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+        margin-bottom: 0.5rem;
+    }
 `;
 
 /* Right Side Graphic Frame (Specific to row variant) */

@@ -27,6 +27,7 @@ export const BadgeRow = styled.div`
 export const BadgeText = styled.span`
     ${font("labelCaps")};
     color: ${color("primary")};
+    text-transform: uppercase;
 `;
 
 export const MainTitle = styled.h1`

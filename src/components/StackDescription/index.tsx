@@ -9,7 +9,7 @@ export const StackHero = () => {
             <S.BadgeRow>
                 <span className="material-symbols-outlined">terminal</span>
 
-                <S.BadgeText>{t("badge")}</S.BadgeText>
+                <S.BadgeText>stack</S.BadgeText>
             </S.BadgeRow>
 
             <S.MainTitle>

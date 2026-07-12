@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { color, font, rounded } from "../styles/theme";
+import { color, font, rounded } from "../../styles/theme";
 
 export const SwitchLabel = styled.label<{ $isChecked: boolean }>`
     ${font("labelCaps")};

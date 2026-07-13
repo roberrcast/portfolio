@@ -7,9 +7,11 @@ export const AboutDetails = () => {
 
     return (
         <S.DetailsSection>
-            <S.SectionTitle>{t("title")}</S.SectionTitle>
+            <S.SectionTitle className="reveal reveal-up">
+                {t("title")}
+            </S.SectionTitle>
 
-            <S.GridContainer>
+            <S.GridContainer className="reveal reveal-left">
                 {detailsData.map((item) => (
                     <S.DetailsCard key={item.id}>
                         <S.CardHeader>

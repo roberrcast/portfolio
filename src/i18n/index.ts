@@ -49,6 +49,12 @@ import {
     es as aboutDescriptionEs,
 } from "../components/AboutMeDescription/translation";
 
+// About Me Details
+import {
+    en as aboutDetailsEn,
+    es as aboutDetailsEs,
+} from "../components/AboutMeDetails/translation";
+
 // About Interests
 import {
     en as interestsEn,
@@ -120,6 +126,7 @@ i18next
                 worksPage: worksPageEn,
                 aboutHeader: aboutHeaderEn,
                 aboutDescription: aboutDescriptionEn,
+                aboutDetails: aboutDetailsEn,
                 interests: interestsEn,
                 aboutCta: ctaEn,
                 stackHero: stackHeroEn,
@@ -142,6 +149,7 @@ i18next
                 worksPage: worksPageEs,
                 aboutHeader: aboutHeaderEs,
                 aboutDescription: aboutDescriptionEs,
+                aboutDetails: aboutDetailsEs,
                 interests: interestsEs,
                 aboutCta: ctaEs,
                 stackHero: stackHeroEs,

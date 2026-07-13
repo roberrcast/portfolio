@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import RouterLinkButton from "../../common/RouterLinkButton";
 import { useNavLinks } from "../../hooks/useNavLinks";
 import MobileMenu from "../MobileMenu";
-import { LanguageToggle } from "../../LanguageToggle";
+import { LanguageToggle } from "../LanguageToggle";
 
 export const Header = () => {
     const { t } = useTranslation("common");

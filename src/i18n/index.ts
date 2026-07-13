@@ -49,6 +49,12 @@ import {
     es as aboutDescriptionEs,
 } from "../components/AboutMeDescription/translation";
 
+// About Me Details
+import {
+    en as aboutDetailsEn,
+    es as aboutDetailsEs,
+} from "../components/AboutMeDetails/translation";
+
 // About Interests
 import {
     en as interestsEn,
@@ -83,7 +89,7 @@ import {
 import {
     en as hireMeHeroEn,
     es as hireMeHeroEs,
-} from "../HireMeHero/translation";
+} from "../components/HireMeHero/translation";
 
 // HireMe Timeline
 import {
@@ -98,7 +104,10 @@ import {
 } from "../components/WhyHireMe/translation";
 
 // Hire Me Cta
-import { en as hireMeCtaEn, es as hireMeCtaEs } from "../HireMeCTA/translation";
+import {
+    en as hireMeCtaEn,
+    es as hireMeCtaEs,
+} from "../components/HireMeCTA/translation";
 
 i18next
     .use(LanguageDetector)
@@ -117,6 +126,7 @@ i18next
                 worksPage: worksPageEn,
                 aboutHeader: aboutHeaderEn,
                 aboutDescription: aboutDescriptionEn,
+                aboutDetails: aboutDetailsEn,
                 interests: interestsEn,
                 aboutCta: ctaEn,
                 stackHero: stackHeroEn,
@@ -139,6 +149,7 @@ i18next
                 worksPage: worksPageEs,
                 aboutHeader: aboutHeaderEs,
                 aboutDescription: aboutDescriptionEs,
+                aboutDetails: aboutDetailsEs,
                 interests: interestsEs,
                 aboutCta: ctaEs,
                 stackHero: stackHeroEs,

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import type { ButtonVariant } from "../styles/mixins";
-import { color, font, rounded } from "../styles/theme";
+import type { ButtonVariant } from "../../styles/mixins";
+import { color, font, rounded } from "../../styles/theme";
 
 export const CtaSection = styled.section`
     background-color: ${color("primaryContainer")};

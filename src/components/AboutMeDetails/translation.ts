@@ -7,15 +7,15 @@ export const en = {
     },
 
     language: {
-        tag: "C2 Level",
-        title: "English Proficiency",
-        text: "Bilingual professional with C2 proficiency (Cambridge/CEFR equivalent) in medical and legal interpretation.",
+        tag: "bilingual",
+        title: "English and Spanish",
+        text: "Native Spanish speaker with high English proficiency (Cambridge/CEFR level C2 equivalent). Professional experience in medical and legal interpretation.",
     },
 
     theology: {
         tag: "degree",
         title: "Theology",
-        text: "Degree in Theology from Universidad Madero (UMAD), providing a unique lens on human systems.",
+        text: "Bachelor's Degree in Theology from Madero University (UMAD), in Mexico,  providing a unique lens on human systems.",
     },
 };
 
@@ -28,9 +28,9 @@ export const es = {
     },
 
     language: {
-        tag: "Nivel C2",
-        title: "Dominio del inglés",
-        text: "Profesional bilingüe con nivel C2 (equivalente a Cambridge/MCER) en interpretación médica y jurídica.",
+        tag: "bilingüe",
+        title: "Inglés y Espalñol",
+        text: "Hablante nativo de español con un alto dominio del inglés (equivalente al nivel C2 de Cambridge/MCER). Experiencia profesional en interpretación médica y jurídica.",
     },
 
     theology: {

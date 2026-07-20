@@ -44,7 +44,7 @@ export const useContactForm = (t: TFunction) => {
         e.preventDefault();
 
         let isValid = true;
-        let newErrors: ContactFormData = {
+        const newErrors: ContactFormData = {
             name: "",
             email: "",
             subject: "",

@@ -5,6 +5,7 @@ import RouterLinkButton from "../../common/RouterLinkButton";
 import { useNavLinks } from "../../hooks/useNavLinks";
 import MobileMenu from "../MobileMenu";
 import { LanguageToggle } from "../LanguageToggle";
+import { home } from "../../assets";
 
 export const Header = () => {
     const { t } = useTranslation("common");
@@ -17,7 +18,9 @@ export const Header = () => {
             <S.NavContent>
                 <S.LogoMenuContainer>
                     <S.Logo>
-                        <Link to={"/"}>{"{ io }"}</Link>
+                        <Link to={"/"}>
+                            <img src={home} alt="" />
+                        </Link>
                     </S.Logo>
 
                     <MobileMenu />

@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import { useTranslation } from "react-i18next";
-import { me } from "../../assets";
+import { profilePicture } from "../../assets";
 
 export const AboutMeHeader = () => {
     const { t } = useTranslation("aboutHeader");
@@ -8,10 +8,8 @@ export const AboutMeHeader = () => {
     return (
         <S.HeaderContainer className="reveal reveal-up">
             <S.AvatarWrapper>
-                <S.GlowEffect />
-
                 <S.ImageFrame>
-                    <S.ProfileImage src={me} alt={t("altText")} />
+                    <S.ProfileImage src={profilePicture} alt={t("altText")} />
                 </S.ImageFrame>
             </S.AvatarWrapper>
 

@@ -7,8 +7,8 @@ export const en = {
     },
 
     language: {
-        tag: "bilingual",
-        title: "English and Spanish",
+        tag: "c2 english",
+        title: "Bilingual",
         text: "Native Spanish speaker with high English proficiency (Cambridge/CEFR level C2 equivalent). Professional experience in medical and legal interpretation.",
     },
 
@@ -28,8 +28,8 @@ export const es = {
     },
 
     language: {
-        tag: "bilingüe",
-        title: "Inglés y Espalñol",
+        tag: "inglés c2",
+        title: "Bilingüe",
         text: "Hablante nativo de español con un alto dominio del inglés (equivalente al nivel C2 de Cambridge/MCER). Experiencia profesional en interpretación médica y jurídica.",
     },
 

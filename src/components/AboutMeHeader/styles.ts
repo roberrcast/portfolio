@@ -21,20 +21,6 @@ export const AvatarWrapper = styled.div`
     position: relative;
 `;
 
-export const GlowEffect = styled.div`
-    position: absolute;
-    inset: 0;
-    background-color: ${color("primaryContainer")};
-    border-radius: ${rounded("full")};
-    filter: blur(40px);
-    opacity: 0.1;
-    transition: opacity 0.3s ease-in-out;
-
-    ${AvatarWrapper}:hover & {
-        opacity: 0.2;
-    }
-`;
-
 export const ImageFrame = styled.div`
     width: 12rem;
     height: 12rem;
@@ -58,12 +44,12 @@ export const ProfileImage = styled.img`
     height: 100%;
     object-fit: cover;
     border-radius: ${rounded("full")};
-    filter: grayscale(100%);
-    transition: filter 0.5s ease-in-out;
-
-    ${AvatarWrapper}:hover & {
-        filter: grayscale(0%);
-    }
+    // filter: grayscale(100%);
+    // transition: filter 0.5s ease-in-out;
+    //
+    // ${AvatarWrapper}:hover & {
+    //     filter: grayscale(0%);
+    // }
 `;
 
 export const TextGroup = styled.div`

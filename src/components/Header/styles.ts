@@ -35,6 +35,8 @@ export const NavContent = styled.div`
 
 export const Logo = styled.div`
     a {
+        display: flex;
+        align-items: center;
         ${font("headlineLg")};
         color: ${color("onSurface")};
         font-weight: 800;
@@ -44,10 +46,15 @@ export const Logo = styled.div`
         }
     }
 
-    svg {
-        width: 120px;
-        height: auto;
-        display: block;
+    img {
+        width: 50px;
+        transition: 0.2s ease-in-out;
+
+        @media (hover: hover) {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 `;
 

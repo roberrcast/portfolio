@@ -5,21 +5,21 @@ export const en = {
         photography: {
             title: "DSLR Photography",
             description:
-                "Fine-tuning focus and aperture to turn everyday moments into captivating shots.",
+                "I like going beyond the basics and experimenting with technical camera settings. Fine-tuning focus and aperture allows me to turn everyday moments into captivating shots.",
             tags: ["philosophy"],
         },
 
         system: {
             title: "Good Cup of Coffee",
             description:
-                "Honestly, a good cup goes a long way, whether just for enjoyment or to fuel my coding sessions, a good cup is always by my side.",
+                "For me, a good cup of black coffee goes a long way. Whether just for enjoyment or to fuel my coding sessions, a hot cup is always by my side.",
             tags: ["joe"],
         },
 
         artMusic: {
             title: "Art & Music",
             description:
-                "From gohtic architecture to minimalism, I draw inspiration from the raw, unadorned expression of form and rhythm.",
+                "From gothic architecture to modern minimalism, I draw inspiration from the raw, unadorned expression of form and rhythm.",
             tags: ["classical-music", "old masters", "impressionism"],
         },
     },
@@ -32,21 +32,21 @@ export const es = {
         photography: {
             title: "Fotografía con DSLR",
             description:
-                "Ajustar con precisión el enfoque y la apertura para convertir los momentos cotidianos en fotos cautivadoras.",
+                "Me gusta ir más allá de lo básico y experimentar con los ajustes técnicos de la cámara. Ajustar con precisión el enfoque y la apertura me permite convertir momentos cotidianos en fotos cautivadoras.",
             tags: ["filosofía"],
         },
 
         system: {
             title: "Una buena taza de café",
             description:
-                "La verdad es que una buena taza de café ayuda mucho, ya sea simplemente para disfrutar o para darme energía durante mis sesiones de programación; una buena taza de café siempre está a mi lado.",
+                "Para mí, una buena taza de café negro me da mucha energía. Ya sea solo por placer o para darme energía durante mis sesiones de programación, siempre tengo una taza caliente a mi lado.",
             tags: ["café"],
         },
 
         artMusic: {
             title: "Música y Arte",
             description:
-                "Desde la arquitectura gótica hasta el minimalismo, me inspiro en la expresión cruda y sin adornos de la forma y el ritmo.",
+                "Desde la arquitectura gótica hasta el minimalismo moderno, me inspiro en la expresión cruda y sin adornos de la forma y el ritmo.",
             tags: ["música-clásica", "maestros-clásicos", "impresionismo"],
         },
     },

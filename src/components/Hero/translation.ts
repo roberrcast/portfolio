@@ -3,7 +3,7 @@ export const en = {
     subtitle: "Front End Developer | Digital Craftsman",
     description:
         "Aspiring Front End Engineer specialized in building responsive web applications with React, JavaScript, and TypeScript.",
-    viewProject: "View My Projecs",
+    viewProject: "View My Projects",
 };
 
 export const es = {

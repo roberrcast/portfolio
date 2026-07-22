@@ -83,7 +83,7 @@ import { en as formEn, es as formEs } from "../components/Form/translation";
 import {
     en as contactPageEn,
     es as contactPageEs,
-} from "../pages/Contact/translations";
+} from "../pages/Contact/translation";
 
 // HireMe Hero
 import {
@@ -173,5 +173,11 @@ i18next
             escapeValue: false, // React already protects against XSS
         },
     });
+
+document.documentElement.lang = i18next.language;
+
+i18next.on("languageChanged", (lng) => {
+    document.documentElement.lang = lng;
+});
 
 export default i18next;

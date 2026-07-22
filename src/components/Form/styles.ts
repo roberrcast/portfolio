@@ -154,7 +154,7 @@ export const SubmitButton = styled.button<{
 
     color: ${(props) =>
         props.$status === "success" || props.$status === "error"
-            ? color("surface")
+            ? color("onSurface")
             : color("onPrimaryFixed")};
 
     opacity: ${(props) => (props.$status === "sending" ? 0.8 : 1)};

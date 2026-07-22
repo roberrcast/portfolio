@@ -135,6 +135,10 @@ export const Form = () => {
                             </>
                         )}
                     </S.SubmitButton>
+
+                    <S.ErrorMessage $isVisible={formStatus === "error"}>
+                        {t("errors.submitFailed")}
+                    </S.ErrorMessage>
                 </S.ButtonWrapper>
             </S.Form>
         </S.FormContainer>

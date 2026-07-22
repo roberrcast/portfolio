@@ -1,5 +1,6 @@
 export const en = {
     nav: {
+        home: "Home",
         works: "Works",
         about: "About",
         contact: "Contact",
@@ -8,11 +9,13 @@ export const en = {
 
     buttons: {
         hireMe: "Hire Me",
+        hire: "Hire" /* For tab use in browser with 'useDocumentTitle' */,
     },
 };
 
 export const es = {
     nav: {
+        home: "Inicio",
         works: "Proyectos",
         about: "Acerca",
         contact: "Contacto",
@@ -21,5 +24,6 @@ export const es = {
 
     buttons: {
         hireMe: "Contratar",
+        hire: "Contratar" /* Para uso en la pestaña del navegador con 'useDocumentTitle' */,
     },
 };

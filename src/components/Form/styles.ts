@@ -1,5 +1,6 @@
 import styled, { css, keyframes } from "styled-components";
 import { color, font, rounded, spacing } from "../../styles/theme";
+import type { FormStatus } from "../../hooks/useContactForm";
 
 const spin = keyframes`
     from { transform: rotate(0deg); }
@@ -129,7 +130,7 @@ export const ButtonWrapper = styled.div`
 // Continue with the add-on styling for the submit button
 
 export const SubmitButton = styled.button<{
-    $status: "idle" | "sending" | "success";
+    $status: FormStatus;
 }>`
     width: 100%;
     padding: 1rem 2.5rem;

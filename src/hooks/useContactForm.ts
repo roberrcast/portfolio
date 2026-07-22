@@ -8,7 +8,7 @@ interface ContactFormData {
     message: string;
 }
 
-type FormStatus = "idle" | "sending" | "success" | "error";
+export type FormStatus = "idle" | "sending" | "success" | "error";
 
 export const useContactForm = (t: TFunction) => {
     const [formData, setFormData] = useState<ContactFormData>({

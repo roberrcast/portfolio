@@ -3,6 +3,7 @@ import { useTranslation, Trans } from "react-i18next";
 import StackGrid from "../../components/StackGrid";
 import { frontEndStack, workflow } from "./data";
 import { SectionWrapper, Paragraphs, ParagraphsContainer } from "./styles";
+import { useDocumentTitle } from "../../hooks/useDocumentTitle";
 
 interface StackItem {
     id: string;
@@ -12,6 +13,9 @@ interface StackItem {
 
 export const StackPage = () => {
     const { t } = useTranslation("stackTools");
+    const { t: tCommon } = useTranslation("common");
+
+    useDocumentTitle(tCommon("nav.stack"));
 
     const descriptionKeys = ["block1", "block2"];
 

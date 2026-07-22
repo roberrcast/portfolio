@@ -125,6 +125,15 @@ export const Form = () => {
                                 <span>{t("button.sent")}</span>
                             </>
                         )}
+
+                        {formStatus === "error" && (
+                            <>
+                                <span className="material-symbols-outlined">
+                                    error
+                                </span>
+                                <span>{t("button.error")}</span>
+                            </>
+                        )}
                     </S.SubmitButton>
                 </S.ButtonWrapper>
             </S.Form>

@@ -148,12 +148,15 @@ export const SubmitButton = styled.button<{
     background-color: ${(props) =>
         props.$status === "success"
             ? color("onSuccess")
-            : color("primaryContainer")};
+            : props.$status === "error"
+              ? color("onError")
+              : color("primaryContainer")};
 
     color: ${(props) =>
-        props.$status === "success"
+        props.$status === "success" || props.$status === "error"
             ? color("surface")
             : color("onPrimaryFixed")};
+
     opacity: ${(props) => (props.$status === "sending" ? 0.8 : 1)};
 
     pointer-events: ${(props) => (props.$status !== "idle" ? "none" : "auto")};

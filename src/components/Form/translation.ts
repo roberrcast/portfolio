@@ -17,6 +17,7 @@ export const en = {
         submit: "Send Message",
         sending: "Sending...",
         sent: "Message Sent",
+        error: "Something Went Wrong",
     },
 
     errors: {
@@ -46,6 +47,7 @@ export const es = {
         submit: "Enviar Mensaje",
         sending: "Enviando...",
         sent: "Mensaje Enviado",
+        error: "Algo Salió Mal",
     },
 
     errors: {

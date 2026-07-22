@@ -120,6 +120,10 @@ export const useContactForm = (t: TFunction) => {
             })
             .catch(() => {
                 setFormStatus("error");
+
+                setTimeout(() => {
+                    setFormStatus("idle");
+                }, 3000);
             });
     };
 

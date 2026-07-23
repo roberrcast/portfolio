@@ -125,7 +125,20 @@ export const Form = () => {
                                 <span>{t("button.sent")}</span>
                             </>
                         )}
+
+                        {formStatus === "error" && (
+                            <>
+                                <span className="material-symbols-outlined">
+                                    error
+                                </span>
+                                <span>{t("button.error")}</span>
+                            </>
+                        )}
                     </S.SubmitButton>
+
+                    <S.ErrorMessage $isVisible={formStatus === "error"}>
+                        {t("errors.submitFailed")}
+                    </S.ErrorMessage>
                 </S.ButtonWrapper>
             </S.Form>
         </S.FormContainer>

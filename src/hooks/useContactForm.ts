@@ -38,6 +38,10 @@ export const useContactForm = (t: TFunction) => {
         if (errors[name as keyof ContactFormData]) {
             setErrors((prev) => ({ ...prev, [name]: "" }));
         }
+
+        if (formStatus === "error") {
+            setFormStatus("idle");
+        }
     };
 
     const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {

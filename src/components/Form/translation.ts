@@ -17,6 +17,7 @@ export const en = {
         submit: "Send Message",
         sending: "Sending...",
         sent: "Message Sent",
+        error: "That's unexpected..",
     },
 
     errors: {
@@ -24,6 +25,8 @@ export const en = {
         emailInvalid: "Please enter a valid email",
         subjectRequired: "Subject is required",
         messageRequired: "Please enter a message",
+        submitFailed:
+            "There was an error, if you wish you can try again later or message me directly at rob@robrodriguez.dev",
     },
 };
 
@@ -46,6 +49,7 @@ export const es = {
         submit: "Enviar Mensaje",
         sending: "Enviando...",
         sent: "Mensaje Enviado",
+        error: "Eso sí que es inesperado..",
     },
 
     errors: {
@@ -53,5 +57,7 @@ export const es = {
         emailInvalid: "Ingrese un correo electrónico válido",
         subjectRequired: "El asunto es obligatorio",
         messageRequired: "Ingrese algún mensaje",
+        submitFailed:
+            "Se produjo un error; si lo deseas, puedes volver a intentarlo más tarde o enviarme un mensaje directamente a rob@robrodriguez.dev",
     },
 };

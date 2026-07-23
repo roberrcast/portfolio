@@ -26,7 +26,7 @@ export const en = {
         subjectRequired: "Subject is required",
         messageRequired: "Please enter a message",
         submitFailed:
-            "There was an error, if you wish you can try again later or message me directly at rob@robrodriguez.dev",
+            "There was an error, if you wish you can try again later or message me directly at <1>rob@robrodriguez.dev</1>",
     },
 };
 
@@ -58,6 +58,6 @@ export const es = {
         subjectRequired: "El asunto es obligatorio",
         messageRequired: "Ingrese algún mensaje",
         submitFailed:
-            "Se produjo un error; si lo deseas, puedes volver a intentarlo más tarde o enviarme un mensaje directamente a rob@robrodriguez.dev",
+            "Se produjo un error; si lo deseas, puedes volver a intentarlo más tarde o enviarme un mensaje directamente a <1>rob@robrodriguez.dev</1>",
     },
 };

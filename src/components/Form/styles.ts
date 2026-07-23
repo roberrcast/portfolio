@@ -81,6 +81,10 @@ export const ErrorMessage = styled.p<{ $isVisible: boolean }>`
     pointer-events: ${(props) => (props.$isVisible ? "auto" : "none")};
     /* position: absolute; */
     bottom: -1.5rem;
+
+    span {
+        color: ${color("inverseSurface")};
+    }
 `;
 
 export const Label = styled.label`
@@ -153,9 +157,11 @@ export const SubmitButton = styled.button<{
               : color("primaryContainer")};
 
     color: ${(props) =>
-        props.$status === "success" || props.$status === "error"
-            ? color("onSurface")
-            : color("onPrimaryFixed")};
+        props.$status === "success"
+            ? color("surface")
+            : props.$status === "error"
+              ? color("onSurface")
+              : color("onPrimaryFixed")};
 
     opacity: ${(props) => (props.$status === "sending" ? 0.8 : 1)};
 

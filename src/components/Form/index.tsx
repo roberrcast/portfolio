@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import { useContactForm } from "../../hooks/useContactForm";
 
 export const Form = () => {
@@ -137,7 +137,11 @@ export const Form = () => {
                     </S.SubmitButton>
 
                     <S.ErrorMessage $isVisible={formStatus === "error"}>
-                        {t("errors.submitFailed")}
+                        <Trans
+                            i18nKey="errors.submitFailed"
+                            t={t}
+                            components={{ 1: <span /> }}
+                        />
                     </S.ErrorMessage>
                 </S.ButtonWrapper>
             </S.Form>

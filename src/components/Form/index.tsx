@@ -12,12 +12,7 @@ export const Form = () => {
         <S.FormContainer className="reveal reveal-left">
             <S.GlowEffect />
 
-            <S.Form
-                action=""
-                onSubmit={handleSubmit}
-                noValidate
-                autoComplete="off"
-            >
+            <S.Form action="" onSubmit={handleSubmit} noValidate>
                 <S.InputGrid>
                     {/* ---> Name input <--- */}
                     <S.InputWrapper>
@@ -37,6 +32,7 @@ export const Form = () => {
                             aria-describedby={
                                 errors.name ? "name-error" : undefined
                             }
+                            autoComplete="name"
                         />
 
                         <S.ErrorMessage
@@ -66,6 +62,7 @@ export const Form = () => {
                             aria-describedby={
                                 errors.email ? "email-error" : undefined
                             }
+                            autoComplete="email"
                         />
 
                         <S.ErrorMessage
@@ -96,6 +93,7 @@ export const Form = () => {
                         aria-describedby={
                             errors.subject ? "subject-error" : undefined
                         }
+                        autoComplete="off"
                     />
 
                     <S.ErrorMessage
@@ -125,6 +123,7 @@ export const Form = () => {
                         aria-describedby={
                             errors.message ? "message-error" : undefined
                         }
+                        autoComplete="off"
                     ></S.TextArea>
 
                     <S.ErrorMessage
@@ -188,7 +187,7 @@ export const Form = () => {
                         )}
                     </S.SubmitButton>
 
-                    <S.VisuallyHidden aria-libe="polite" className="sr-only">
+                    <S.VisuallyHidden aria-libe="polite">
                         {formStatus === "sending" && t("button.sending")}
                         {formStatus === "success" && t("button.sent")}
                         {formStatus === "error" && t("button.error")}
@@ -198,7 +197,9 @@ export const Form = () => {
                         <Trans
                             i18nKey="errors.submitFailed"
                             t={t}
-                            components={{ 1: <span /> }}
+                            components={{
+                                1: <a href="mailto:rob@robdriguez.dev" />,
+                            }}
                         />
                     </S.ErrorMessage>
                 </S.ButtonWrapper>

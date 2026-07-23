@@ -82,7 +82,8 @@ export const ErrorMessage = styled.p<{ $isVisible: boolean }>`
     /* position: absolute; */
     bottom: -1.5rem;
 
-    span {
+    a {
+        text-decoration: underline;
         color: ${color("inverseSurface")};
     }
 `;
@@ -104,6 +105,14 @@ const inputStyles = css<{ $hasError?: boolean }>`
     color: ${color("tertiaryFixedDim")};
     transition: border-color 0.2s ease;
     outline: none;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+        -webkit-text-fill-color: ${color("tertiaryFixedDim")};
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
 
     &::placeholder {
         ${font("bodyMd")};

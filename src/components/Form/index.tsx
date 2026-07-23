@@ -31,9 +31,19 @@ export const Form = () => {
                             value={formData.name}
                             onChange={handleChange}
                             $hasError={!!errors.name}
+                            required
+                            aria-required="true"
+                            aria-invalid={!!errors.name}
+                            aria-describedby={
+                                errors.name ? "name-error" : undefined
+                            }
                         />
 
-                        <S.ErrorMessage $isVisible={!!errors.name}>
+                        <S.ErrorMessage
+                            id="name-error"
+                            $isVisible={!!errors.name}
+                            role="alert"
+                        >
                             {errors.name}
                         </S.ErrorMessage>
                     </S.InputWrapper>
@@ -50,9 +60,19 @@ export const Form = () => {
                             value={formData.email}
                             onChange={handleChange}
                             $hasError={!!errors.email}
+                            required
+                            aria-required="true"
+                            aria-invalid={!!errors.email}
+                            aria-describedby={
+                                errors.email ? "email-error" : undefined
+                            }
                         />
 
-                        <S.ErrorMessage $isVisible={!!errors.email}>
+                        <S.ErrorMessage
+                            id="email-error"
+                            $isVisible={!!errors.email}
+                            role="alert"
+                        >
                             {errors.email}
                         </S.ErrorMessage>
                     </S.InputWrapper>
@@ -70,9 +90,19 @@ export const Form = () => {
                         value={formData.subject}
                         onChange={handleChange}
                         $hasError={!!errors.subject}
+                        required
+                        aria-required="true"
+                        aria-invalid={!!errors.subject}
+                        aria-describedby={
+                            errors.subject ? "subject-error" : undefined
+                        }
                     />
 
-                    <S.ErrorMessage $isVisible={!!errors.subject}>
+                    <S.ErrorMessage
+                        id="subject-error"
+                        $isVisible={!!errors.subject}
+                        role="alert"
+                    >
                         {errors.subject}
                     </S.ErrorMessage>
                 </S.InputWrapper>
@@ -89,9 +119,19 @@ export const Form = () => {
                         value={formData.message}
                         onChange={handleChange}
                         $hasError={!!errors.message}
+                        required
+                        aria-required="true"
+                        aria-invalid={!!errors.message}
+                        aria-describedby={
+                            errors.message ? "message-error" : undefined
+                        }
                     ></S.TextArea>
 
-                    <S.ErrorMessage $isVisible={!!errors.message}>
+                    <S.ErrorMessage
+                        id="message-error"
+                        $isVisible={!!errors.message}
+                        role="alert"
+                    >
                         {errors.message}
                     </S.ErrorMessage>
                 </S.InputWrapper>
@@ -103,14 +143,20 @@ export const Form = () => {
                             <>
                                 <span>{t("button.submit")}</span>
 
-                                <span className="material-symbols-outlined">
+                                <span
+                                    className="material-symbols-outlined"
+                                    aria-hidden="true"
+                                >
                                     arrow_forward
                                 </span>
                             </>
                         )}
                         {formStatus === "sending" && (
                             <>
-                                <S.SpinnerIcon className="material-symbols-outlined">
+                                <S.SpinnerIcon
+                                    className="material-symbols-outlined"
+                                    aria-hidden="true"
+                                >
                                     progress_activity
                                 </S.SpinnerIcon>
                                 <span>{t("button.sending")}</span>
@@ -119,7 +165,10 @@ export const Form = () => {
 
                         {formStatus === "success" && (
                             <>
-                                <span className="material-symbols-outlined">
+                                <span
+                                    className="material-symbols-outlined"
+                                    aria-hidden="true"
+                                >
                                     check_circle
                                 </span>
                                 <span>{t("button.sent")}</span>
@@ -128,13 +177,22 @@ export const Form = () => {
 
                         {formStatus === "error" && (
                             <>
-                                <span className="material-symbols-outlined">
+                                <span
+                                    className="material-symbols-outlined"
+                                    aria-hidden="true"
+                                >
                                     error
                                 </span>
                                 <span>{t("button.error")}</span>
                             </>
                         )}
                     </S.SubmitButton>
+
+                    <S.VisuallyHidden aria-libe="polite" className="sr-only">
+                        {formStatus === "sending" && t("button.sending")}
+                        {formStatus === "success" && t("button.sent")}
+                        {formStatus === "error" && t("button.error")}
+                    </S.VisuallyHidden>
 
                     <S.ErrorMessage $isVisible={formStatus === "error"}>
                         <Trans

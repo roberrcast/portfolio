@@ -10,7 +10,7 @@ export const WorksSection = styled.section`
     margin-bottom: ${spacing("sectionGap")};
 `;
 
-export const SectionTitle = styled.h3`
+export const SectionTitle = styled.h2`
     ${font("headlineLg")};
     color: ${color("onSurface")};
     font-weight: 700;
@@ -31,7 +31,8 @@ interface CardProps {
     $reverse?: boolean;
 }
 
-export const ProjectCard = styled.div<CardProps>`
+export const ProjectCard = styled.article<CardProps>`
+    position: relative;
     background-color: ${color("surface")};
     border: 1px solid ${color("lowContrastOutline")};
     border-radius: ${rounded("lg")};
@@ -55,7 +56,7 @@ export const ProjectCard = styled.div<CardProps>`
     }
 `;
 
-export const ImageLinkWrapper = styled.a`
+export const ImageContainer = styled.div`
     width: 100%;
     aspect-ratio: 16 / 9;
     background-color: ${color("surfaceContainerLow")};
@@ -127,6 +128,13 @@ export const ExternalLink = styled.a`
     transition: opacity 0.2s ease;
     display: inline-flex;
     align-items: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
 
     @media (hover: hover) {
         &:hover {

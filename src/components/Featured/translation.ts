@@ -1,6 +1,7 @@
 export const en = {
     sectionTitle: "Featured Works",
     projects: {
+        opensInNew: "opens in new tab",
         gallery: {
             title: "Virtual Gallery",
             altText: "Virtual Gallery Interface Screenshot",
@@ -22,11 +23,14 @@ export const en = {
                 "An E-commerce experience simulation. Crafting a sophisticated user journey to product discovery.",
         },
     },
+
+    technologiesUsed: "Techonologies used",
 };
 
 export const es = {
     sectionTitle: "Proyectos Destacados",
     projects: {
+        opensInNew: "se abre en una nueva pestaña",
         gallery: {
             title: "Galería Virtual",
             altText: "Captura de pantalla de una galería virtual",
@@ -48,4 +52,6 @@ export const es = {
                 "Una simulación de una experiencia de comercio electrónico. Diseñada para un recorrido sofisticado del usuario hacia el descubrimiento del producto.",
         },
     },
+
+    technologiesUsed: "Tecnologías utilizadas",
 };

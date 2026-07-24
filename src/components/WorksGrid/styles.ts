@@ -105,14 +105,15 @@ export const InfoWrapper = styled.div<{ $variant?: "row" }>`
 `}
 `;
 
-export const TagContainer = styled.div`
+export const TagContainer = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1rem;
+    list-style: none;
 `;
 
-export const Tag = styled.span`
+export const Tag = styled.li`
     background-color: ${color("lowContrastOutline")};
     color: ${color("primaryContainer")};
     ${font("labelCaps")};
@@ -121,7 +122,7 @@ export const Tag = styled.span`
     text-transform: uppercase;
 `;
 
-export const ProjectTitle = styled.h3`
+export const ProjectTitle = styled.h2`
     ${font("headlineLg")};
     color: ${color("onSurface")};
     margin-bottom: 0.5rem;

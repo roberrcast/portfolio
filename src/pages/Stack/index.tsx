@@ -29,7 +29,6 @@ export const StackPage = () => {
                 items={frontEndStack}
                 getImage={(item: StackItem) => item.image}
                 getLabel={(item: StackItem) => item.title}
-                getAlt={(item: StackItem) => t(`stack.${item.id}`)}
             />
 
             <StackGrid
@@ -38,7 +37,6 @@ export const StackPage = () => {
                 items={workflow}
                 getImage={(item: StackItem) => item.image}
                 getLabel={(item: StackItem) => item.title}
-                getAlt={(item: StackItem) => t(`stack.${item.id}`)}
             />
 
             <ParagraphsContainer className="reveal reveal-left">

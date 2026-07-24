@@ -84,6 +84,11 @@ export const CVButton = styled.a`
         }
     }
 
+    &:focus-visible {
+        outline: 2px solid ${color("primary")};
+        outline-offset: 2px;
+    }
+
     @media (min-width: 480px) {
         width: auto;
     }

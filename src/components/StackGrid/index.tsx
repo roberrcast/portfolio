@@ -6,7 +6,6 @@ interface StackGridProps<T> {
     items: T[];
     getImage: (item: T) => string;
     getLabel: (item: T) => string;
-    getAlt: (item: T) => string;
 }
 
 export const StackGrid = <T,>({
@@ -15,14 +14,16 @@ export const StackGrid = <T,>({
     items,
     getImage,
     getLabel,
-    getAlt,
 }: StackGridProps<T>) => {
     return (
         <S.SectionWrapper>
             <S.SectionHeader>
                 <S.HeaderTitleGroup className="reveal reveal-left">
                     <S.IconFrame>
-                        <span className="material-symbols-outlined">
+                        <span
+                            className="material-symbols-outlined"
+                            aria-hidden="true"
+                        >
                             {icon}
                         </span>
                     </S.IconFrame>
@@ -30,18 +31,17 @@ export const StackGrid = <T,>({
                     <S.SectionTitle>{title}</S.SectionTitle>
                 </S.HeaderTitleGroup>
 
-                <S.GradientDivider className="reveal reveal-right" />
+                <S.GradientDivider
+                    className="reveal reveal-right"
+                    aria-hidden="true"
+                />
             </S.SectionHeader>
 
             <S.BentoGrid>
                 {items.map((item, index) => (
                     <S.ToolCard key={index} className="reveal-fast">
                         <S.CardInner>
-                            <img
-                                src={getImage(item)}
-                                alt={getAlt(item)}
-                                loading="lazy"
-                            />
+                            <img src={getImage(item)} alt="" loading="lazy" />
 
                             <S.ToolTitle>{getLabel(item)}</S.ToolTitle>
                         </S.CardInner>

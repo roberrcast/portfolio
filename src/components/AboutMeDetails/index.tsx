@@ -15,7 +15,10 @@ export const AboutDetails = () => {
                 {detailsData.map((item) => (
                     <S.DetailsCard key={item.id}>
                         <S.CardHeader>
-                            <span className="material-symbols-outlined">
+                            <span
+                                className="material-symbols-outlined"
+                                aria-hidden="true"
+                            >
                                 {item.icon}
                             </span>
 

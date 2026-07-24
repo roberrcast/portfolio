@@ -10,7 +10,7 @@ export const WorksGrid = () => {
     const rowCards = worksData.filter((item) => item.variant === "row");
 
     const renderTags = (tags: string[]) => (
-        <S.TagContainer>
+        <S.TagContainer role="list">
             {tags.map((tag) => (
                 <S.Tag key={tag}>{tag}</S.Tag>
             ))}
@@ -45,10 +45,14 @@ export const WorksGrid = () => {
                             href={item.link}
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={`${t(`works.${item.id}.title`)} ${t("works.opensInNew")}`}
                         >
                             {t(`works.${item.id}.viewProject`)}
 
-                            <span className="material-symbols-outlined">
+                            <span
+                                className="material-symbols-outlined"
+                                aria-hidden="true"
+                            >
                                 {item.icon}
                             </span>
                         </S.ActionButton>
@@ -80,10 +84,14 @@ export const WorksGrid = () => {
                                 href={item.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label={`${t(`works.${item.id}.title`)} ${t("works.opensInNew")}`}
                             >
                                 {t(`works.${item.id}.viewProject`)}
 
-                                <span className="material-symbols-outlined">
+                                <span
+                                    className="material-symbols-outlined"
+                                    aria-hidden="true"
+                                >
                                     {item.icon}
                                 </span>
                             </S.ActionButton>
@@ -119,10 +127,14 @@ export const WorksGrid = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 $isTextLink={item.isTextLink}
+                                aria-label={`${t(`works.${item.id}.title`)} ${t("works.opensInNew")}`}
                             >
                                 {t(`works.${item.id}.viewProject`)}
 
-                                <span className="material-symbols-outlined">
+                                <span
+                                    className="material-symbols-outlined"
+                                    aria-hidden="true"
+                                >
                                     {item.icon}
                                 </span>
                             </S.ActionButton>

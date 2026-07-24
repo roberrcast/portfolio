@@ -27,7 +27,10 @@ export const Interests = () => {
                             {!isRow && (
                                 <>
                                     <S.UpperHeader>
-                                        <S.InlineIcon className="material-symbols-outlined">
+                                        <S.InlineIcon
+                                            className="material-symbols-outlined"
+                                            aria-hidden="true"
+                                        >
                                             {item.icon}
                                         </S.InlineIcon>
 
@@ -82,7 +85,10 @@ export const Interests = () => {
                                     <S.MediaFrame>
                                         <S.GraphicOverlay />
 
-                                        <S.InlineIcon className="material-symbols-outlined">
+                                        <S.InlineIcon
+                                            className="material-symbols-outlined"
+                                            aria-hidden="true"
+                                        >
                                             {item.icon}
                                         </S.InlineIcon>
                                     </S.MediaFrame>

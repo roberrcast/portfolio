@@ -25,11 +25,15 @@ export const RouterLinkButton: React.FC<RouterLinkButtonProps> = ({
     return (
         <StyledRouterLink $variantConfig={variant} {...rest}>
             {icon && iconPosition === "left" && (
-                <span className="material-symbols-outlined">{icon}</span>
+                <span className="material-symbols-outlined" aria-hidden="true">
+                    {icon}
+                </span>
             )}
             {text}
             {icon && iconPosition === "right" && (
-                <span className="material-symbols-outlined">{icon}</span>
+                <span className="material-symbols-outlined" aria-hidden="true">
+                    {icon}
+                </span>
             )}
         </StyledRouterLink>
     );

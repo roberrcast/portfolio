@@ -15,14 +15,13 @@ export const SwitchLabel = styled.label<{ $isChecked: boolean }>`
     background-color: transparent;
 
     input[type="checkbox"] {
-        display: none;
         position: absolute;
         width: 1px;
         height: 1px;
         padding: 0;
         margin: -1px;
         overflow: hidden;
-        clip: rect(0, 0, 0);
+        clip: rect(0, 0, 0, 0);
         white-space: nowrap;
         border-width: 0;
     }
@@ -63,8 +62,9 @@ export const SwitchLabel = styled.label<{ $isChecked: boolean }>`
         transition: inset 0.15s ease-in-out;
     }
 
-    &:focus-within::after {
+    &:has(:focus-visible)::after {
         inset: -0.25rem;
+        box-shadow: 0 0 0 2px ${color("primary")};
     }
 
     @media (hover: hover) {

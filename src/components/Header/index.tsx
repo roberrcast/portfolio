@@ -19,7 +19,7 @@ export const Header = () => {
                 <S.LogoMenuContainer>
                     <S.Logo>
                         <Link to={"/"}>
-                            <img src={home} alt="" />
+                            <img src={home} alt={t("alt.homeLogo")} />
                         </Link>
                     </S.Logo>
 

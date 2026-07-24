@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { buttonMixin, type ButtonVariant } from "../styles/mixins";
 
-interface RouterLinkButtonProps
+interface LinkButtonProps
     extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     text: string;
     variant: ButtonVariant;
@@ -14,7 +14,7 @@ const StyledLink = styled.a<{
     ${(props) => buttonMixin(props.$variantConfig)}
 `;
 
-export const LinkButton: React.FC<RouterLinkButtonProps> = ({
+export const LinkButton: React.FC<LinkButtonProps> = ({
     text,
     variant,
     icon,
@@ -23,7 +23,11 @@ export const LinkButton: React.FC<RouterLinkButtonProps> = ({
     return (
         <StyledLink $variantConfig={variant} {...rest}>
             {text}
-            {icon && <span className="material-symbols-outlined">{icon}</span>}
+            {icon && (
+                <span className="material-symbols-outlined" aria-hidden="true">
+                    {icon}
+                </span>
+            )}
         </StyledLink>
     );
 };

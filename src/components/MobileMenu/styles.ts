@@ -9,17 +9,13 @@ export const BurgerPopup = styled.div`
     position: relative;
     z-index: 100;
 
-    input {
-        display: none;
-    }
-
     @media (min-width: 769px) {
         display: none;
     }
 `;
 
 /* Core Interactive Burger Box */
-export const BurgerButton = styled.div<{ $isOpen: boolean }>`
+export const BurgerButton = styled.button<{ $isOpen: boolean }>`
     display: flex;
     position: relative;
     align-items: center;
@@ -33,6 +29,12 @@ export const BurgerButton = styled.div<{ $isOpen: boolean }>`
     transition: all 0.7s ease-in-out;
     outline: 0.125rem solid transparent;
     outline-offset: 0;
+    border: transparent;
+
+    &:focus-visible {
+        inset: -0.25rem;
+        box-shadow: 0 0 0 2px ${color("primary")};
+    }
 
     span {
         height: 0.125rem;

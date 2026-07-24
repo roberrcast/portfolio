@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import * as S from "./styles";
 
 export const LanguageToggle = () => {
-    const { i18n, t } = useTranslation();
+    const { i18n, t } = useTranslation("common");
 
     const isSpanish = i18n.language.startsWith("es");
 

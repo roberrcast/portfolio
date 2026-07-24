@@ -28,12 +28,6 @@ export const ImageContainer = styled.div`
         object-fit: cover;
         transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
-
-    // @media (hover: hover) {
-    //     &:hover {
-    //         transform: scale(1.05);
-    //     }
-    // }
 `;
 
 export const TextWrapper = styled.div`

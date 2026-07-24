@@ -1,5 +1,5 @@
 export const en = {
-    profileAlt: "Roberto's profile image",
+    profileAlt: "Portrait of Roberto Rodriguez",
     subtitle: "Front End Developer | Digital Craftsman",
     description:
         "Aspiring Front End Engineer specialized in building responsive web applications with React, JavaScript, and TypeScript.",
@@ -7,7 +7,7 @@ export const en = {
 };
 
 export const es = {
-    profileAlt: "Imágen de perfil de Roberto",
+    profileAlt: "Retrato de Roberto Rodriguez",
     subtitle: "Desarrollador Front End | Artesano Digital",
     description:
         "Aspirante a Ingeniero Front End especializado en la creación de aplicaciones web responsivas con React, JavaScript y TypeScript.",

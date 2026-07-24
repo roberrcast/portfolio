@@ -23,7 +23,10 @@ export const SectionContact: React.FC = () => {
                                 : undefined
                         }
                     >
-                        <span className="material-symbols-outlined">
+                        <span
+                            className="material-symbols-outlined"
+                            aria-hidden="true"
+                        >
                             {channel.icon}
                         </span>
 

@@ -53,7 +53,7 @@ export const PillarContent = styled.div`
     flex-direction: column;
 `;
 
-export const PillarTitle = styled.h5`
+export const PillarTitle = styled.h4`
     ${font("labelCaps")};
     color: ${color("onSurface")};
     margin: 0 0 0.25rem 0;

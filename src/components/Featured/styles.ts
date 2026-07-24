@@ -10,7 +10,7 @@ export const WorksSection = styled.section`
     margin-bottom: ${spacing("sectionGap")};
 `;
 
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled.h3`
     ${font("headlineLg")};
     color: ${color("onSurface")};
     font-weight: 700;

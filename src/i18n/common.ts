@@ -25,6 +25,10 @@ export const en = {
         open: "Open Menu",
         close: "Close Menu",
     },
+
+    misc: {
+        opensInNew: "opens in new tab",
+    },
 };
 
 export const es = {
@@ -53,5 +57,9 @@ export const es = {
     menu: {
         open: "Abrir Menu",
         close: "Cerrar Menu",
+    },
+
+    misc: {
+        opensInNew: "se abre en una nueva pestaña",
     },
 };

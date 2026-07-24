@@ -1,8 +1,11 @@
 import { linkData } from "./data";
 import * as S from "./styles";
+import { useTranslation } from "react-i18next";
 
 export const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
+
+    const { t } = useTranslation("common");
 
     return (
         <S.FooterContainer>
@@ -19,6 +22,7 @@ export const Footer: React.FC = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`${link.label} ${t("misc.opensInNew")}`}
                     >
                         {link.label}
                     </S.FooterLink>

@@ -20,7 +20,7 @@ export const Description = styled.p`
     ${font("bodyMd")};
     color: ${color("onSurfaceVariant")};
     max-width: 32rem;
-    margin: 0 auto auto 2rem;
+    margin: 0 auto 2rem auto;
     line-height: 1.6;
 `;
 
@@ -39,6 +39,13 @@ export const ChannelLink = styled.a`
     align-items: center;
     gap: 0.5rem;
     transition: transform 0.2s ease-out;
+
+    &:focus-visible {
+        transform: scale(1.1);
+        outline: 2px solid ${color("primary")};
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
 
     @media (hover: hover) {
         &:hover {

@@ -58,13 +58,16 @@ export const GradientDivider = styled.div`
     }
 `;
 
-export const BentoGrid = styled.div`
+export const BentoGrid = styled.ul`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 `;
 
-export const ToolCard = styled.div``;
+export const ToolCard = styled.li``;
 
 export const CardInner = styled.div`
     aspect-ratio: 1 / 1;

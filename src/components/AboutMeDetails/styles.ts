@@ -44,7 +44,7 @@ export const CardHeader = styled.div`
     align-items: flex-start;
     margin-bottom: 1rem;
 
-    span.material-symbols-outline {
+    span.material-symbols-outlined {
         color: ${color("primary")};
         font-size: 1.5rem;
     }
@@ -62,7 +62,7 @@ export const TagBadge = styled.div`
     line-height: 1;
 `;
 
-export const CardTitle = styled.div`
+export const CardTitle = styled.h3`
     ${font("headlineLg")};
     font-size: 20px;
     color: ${color("onSurface")};

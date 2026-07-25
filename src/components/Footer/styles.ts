@@ -22,7 +22,7 @@ export const Logo = styled.div`
 export const Copyright = styled.p`
     ${font("bodySm")};
     color: ${color("onSurfaceVariant")};
-    magin: 0;
+    margin: 0;
 `;
 
 export const LinkGroup = styled.div`
@@ -40,5 +40,10 @@ export const FooterLink = styled.a`
         &:hover {
             color: ${color("primary")};
         }
+    }
+    &:focus-visible {
+        outline: 2px solid ${color("primary")};
+        outline-offset: 2px;
+        border-radius: 2px;
     }
 `;

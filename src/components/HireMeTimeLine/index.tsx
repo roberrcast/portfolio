@@ -9,13 +9,13 @@ export const HireMeTimeline = () => {
             <S.SectionHeader>
                 <S.SectionTitle>{t("heading")}</S.SectionTitle>
 
-                <S.DividerLine />
+                <S.DividerLine aria-hidden="true" />
             </S.SectionHeader>
 
             <S.TimelineContainer>
                 {/* <-- Item 1 --> */}
                 <S.TimelineItem>
-                    <S.TimelineDot $isLatest={true} />
+                    <S.TimelineDot $isLatest={true} aria-hidden="true" />
 
                     <S.MetaRow>
                         <S.ItemTitle>{t("current.title")}</S.ItemTitle>

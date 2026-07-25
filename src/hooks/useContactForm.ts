@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import type { TFunction } from "i18next";
 
 interface ContactFormData {
@@ -17,15 +17,18 @@ export const useContactForm = (t: TFunction) => {
         subject: "",
         message: "",
     });
-
     const [errors, setErrors] = useState<ContactFormData>({
         name: "",
         email: "",
         subject: "",
         message: "",
     });
-
     const [formStatus, setFormStatus] = useState<FormStatus>("idle");
+
+    const nameRef = useRef<HTMLInputElement>(null);
+    const emailRef = useRef<HTMLInputElement>(null);
+    const subjectRef = useRef<HTMLInputElement>(null);
+    const messageRef = useRef<HTMLTextAreaElement>(null);
 
     /* <-- Handle Change --> */
     const handleChange = (
@@ -60,16 +63,6 @@ export const useContactForm = (t: TFunction) => {
             isValid = false;
         }
 
-        if (!formData.subject.trim()) {
-            newErrors.subject = t("errors.subjectRequired");
-            isValid = false;
-        }
-
-        if (!formData.message.trim()) {
-            newErrors.message = t("errors.messageRequired");
-            isValid = false;
-        }
-
         const email = formData.email.trim();
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -81,8 +74,29 @@ export const useContactForm = (t: TFunction) => {
             isValid = false;
         }
 
+        if (!formData.subject.trim()) {
+            newErrors.subject = t("errors.subjectRequired");
+            isValid = false;
+        }
+
+        if (!formData.message.trim()) {
+            newErrors.message = t("errors.messageRequired");
+            isValid = false;
+        }
+
         if (!isValid) {
             setErrors(newErrors);
+
+            if (newErrors.name) {
+                nameRef.current?.focus();
+            } else if (newErrors.email) {
+                emailRef.current?.focus();
+            } else if (newErrors.subject) {
+                subjectRef.current?.focus();
+            } else if (newErrors.message) {
+                messageRef.current?.focus();
+            }
+
             return;
         }
 
@@ -133,5 +147,9 @@ export const useContactForm = (t: TFunction) => {
         formStatus,
         handleChange,
         handleSubmit,
+        nameRef,
+        emailRef,
+        subjectRef,
+        messageRef,
     };
 };

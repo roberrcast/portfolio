@@ -21,8 +21,12 @@ export const HireMeHero = () => {
                 <S.CVButton
                     href="/assets/docs/CV_EN_Roberto-Rodriguez.pdf"
                     download
+                    aria-label={`${t("downloadCvEn")} (PDF)`}
                 >
-                    <span className="material-symbols-outlined">
+                    <span
+                        className="material-symbols-outlined"
+                        aria-hidden="true"
+                    >
                         description
                     </span>
 
@@ -33,7 +37,11 @@ export const HireMeHero = () => {
                     href="/assets/docs/CV_ES_Roberto-Rodriguez.pdf"
                     download
                 >
-                    <span className="material-symbols-outlined">
+                    <span
+                        className="material-symbols-outlined"
+                        aria-hidden="true"
+                        aria-label={`${t("downloadCvEs")} (PDF)`}
+                    >
                         description
                     </span>
 

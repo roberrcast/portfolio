@@ -7,7 +7,9 @@ export const StackHero = () => {
     return (
         <S.HeroSection className="reveal reveal-up">
             <S.BadgeRow>
-                <span className="material-symbols-outlined">terminal</span>
+                <span className="material-symbols-outlined" aria-hidden="true">
+                    terminal
+                </span>
 
                 <S.BadgeText>stack</S.BadgeText>
             </S.BadgeRow>

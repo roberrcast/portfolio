@@ -6,8 +6,8 @@ export const FeaturedWorks: React.FC = () => {
     const { t } = useTranslation("featured");
 
     return (
-        <S.WorksSection id="works">
-            <S.SectionTitle className="reveal reveal-up">
+        <S.WorksSection id="works" aria-labelledby="works-heading">
+            <S.SectionTitle className="reveal reveal-up" id="works-heading">
                 {t("sectionTitle")}
             </S.SectionTitle>
             <S.GridContainer>
@@ -17,7 +17,6 @@ export const FeaturedWorks: React.FC = () => {
                         index % 2 === 0 ? "reveal-left" : "reveal-right";
 
                     const title = t(`projects.${project.id}.title`);
-                    const altText = t(`projects.${project.id}.altText`);
                     const description = t(`projects.${project.id}.description`);
 
                     return (
@@ -26,26 +25,30 @@ export const FeaturedWorks: React.FC = () => {
                             $reverse={index % 2 !== 0}
                             className={`reveal ${revealDirection}`}
                         >
-                            <S.ImageLinkWrapper
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <S.ImageContainer>
                                 <img
                                     src={project.image}
-                                    role="img"
                                     loading="lazy"
-                                    alt={altText}
+                                    alt=""
+                                    aria-hidden="true"
                                 />
-                            </S.ImageLinkWrapper>
+                            </S.ImageContainer>
 
                             <S.ContentArea>
                                 <div>
                                     <S.CardHeader>
                                         <S.ProjectTitle>{title}</S.ProjectTitle>
 
-                                        <S.ExternalLink href={project.link}>
-                                            <span className="material-symbols-outlined">
+                                        <S.ExternalLink
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label={`${title} ${t("projects.opensInNew")}`}
+                                        >
+                                            <span
+                                                className="material-symbols-outlined"
+                                                aria-hidden="true"
+                                            >
                                                 open_in_new
                                             </span>
                                         </S.ExternalLink>
@@ -55,7 +58,9 @@ export const FeaturedWorks: React.FC = () => {
                                         {description}
                                     </S.ProjectDescription>
 
-                                    <S.TechTagGroup>
+                                    <S.TechTagGroup
+                                        aria-label={t("technologiesUsed")}
+                                    >
                                         {project.tags.map((tag) => (
                                             <S.TechTag key={tag}>
                                                 {tag}

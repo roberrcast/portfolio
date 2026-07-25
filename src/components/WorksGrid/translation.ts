@@ -1,5 +1,6 @@
 export const en = {
     works: {
+        opensInNew: "opens in new tab",
         gallery: {
             title: "Virtual Gallery",
             description:
@@ -40,6 +41,7 @@ export const en = {
 
 export const es = {
     works: {
+        opensInNew: "se abre en una nueva pestaña",
         gallery: {
             title: "Galería Virtual",
             description:

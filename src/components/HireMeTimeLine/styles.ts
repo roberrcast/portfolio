@@ -24,13 +24,16 @@ export const DividerLine = styled.div`
     background-color: rgba(189, 199, 220, 0.2);
 `;
 
-export const TimelineContainer = styled.div`
+export const TimelineContainer = styled.ol`
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 `;
 
-export const TimelineItem = styled.div`
+export const TimelineItem = styled.li`
     position: relative;
     padding-left: 2rem;
     border-left: 1px solid rgba(189, 199, 220, 0.2);

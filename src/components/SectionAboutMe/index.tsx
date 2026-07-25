@@ -8,8 +8,12 @@ export const SectionAboutMe: React.FC = () => {
     const { t } = useTranslation("about");
 
     return (
-        <S.AboutSection id="about" className="reveal reveal-up">
-            <S.SectionTitle>{t("title")}</S.SectionTitle>
+        <S.AboutSection
+            id="about"
+            className="reveal reveal-up"
+            aria-labelledby="about-section"
+        >
+            <S.SectionTitle id="about-section">{t("title")}</S.SectionTitle>
 
             <S.GridContainer>
                 <S.BackgroundStack>
@@ -22,7 +26,10 @@ export const SectionAboutMe: React.FC = () => {
                         return (
                             <S.PillarItem key={pillar.id}>
                                 <S.IconContainer>
-                                    <span className="material-symbols-outlined">
+                                    <span
+                                        className="material-symbols-outlined"
+                                        aria-hidden="true"
+                                    >
                                         {pillar.icon}
                                     </span>
                                 </S.IconContainer>
@@ -40,10 +47,10 @@ export const SectionAboutMe: React.FC = () => {
                 <S.AmoledCard>
                     <S.CardLabel>{t("subtitle")}</S.CardLabel>
 
-                    <S.InterestsList>
+                    <S.InterestsList role="list">
                         {interestKeys.map((key, index) => (
                             <S.InterestItem key={index}>
-                                <S.BulletDot />
+                                <S.BulletDot aria-hidden="true" />
                                 {t(`personal.${key}`)}
                             </S.InterestItem>
                         ))}

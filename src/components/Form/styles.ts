@@ -82,7 +82,8 @@ export const ErrorMessage = styled.p<{ $isVisible: boolean }>`
     /* position: absolute; */
     bottom: -1.5rem;
 
-    span {
+    a {
+        text-decoration: underline;
         color: ${color("inverseSurface")};
     }
 `;
@@ -104,6 +105,14 @@ const inputStyles = css<{ $hasError?: boolean }>`
     color: ${color("tertiaryFixedDim")};
     transition: border-color 0.2s ease;
     outline: none;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+        -webkit-text-fill-color: ${color("tertiaryFixedDim")};
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
 
     &::placeholder {
         ${font("bodyMd")};
@@ -190,4 +199,16 @@ export const SubmitButton = styled.button<{
     &:active {
         transform: scale(0.95);
     }
+`;
+
+export const VisuallyHidden = styled.span`
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: (0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 `;

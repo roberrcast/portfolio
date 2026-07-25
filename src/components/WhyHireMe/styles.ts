@@ -43,7 +43,7 @@ export const ContentGrid = styled.div`
 
 export const TextColumn = styled.div``;
 
-export const ColumnTitle = styled.h4`
+export const ColumnTitle = styled.h3`
     font-size: 1.25rem;
     font-weight: 600;
     color: ${color("primary")};
@@ -53,16 +53,19 @@ export const ColumnTitle = styled.h4`
 export const CardDescription = styled.p`
     ${font("bodyMdVariant")};
     color: ${color("onSurfaceVariant")};
-    line-heigth: 1.6;
+    line-height: 1.6;
 `;
 
-export const FeaturesGrid = styled.div`
+export const FeaturesGrid = styled.ul`
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 `;
 
-export const FeatureCard = styled.div`
+export const FeatureCard = styled.li`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -73,10 +76,11 @@ export const FeatureCard = styled.div`
     }
 `;
 
-export const FeatureLabel = styled.p`
+export const FeatureLabel = styled.h4`
     ${font("bodySm")};
     font-weight: 700;
     color: ${color("onSurface")};
+    margin: 0;
 `;
 
 export const FeatureDesc = styled.p`

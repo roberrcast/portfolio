@@ -88,10 +88,11 @@ export const CardDescription = styled.p<{ $variant?: "row" }>`
 
 /* Tags & Badges styling */
 
-export const TagContainer = styled.div`
+export const TagContainer = styled.ul`
     display: flex;
     gap: 0.75rem; /* gap-3 */
     flex-wrap: wrap;
+    list-style: none;
 `;
 
 export const CategoryBadge = styled.div`
@@ -104,7 +105,7 @@ export const CategoryBadge = styled.div`
     text-transform: uppercase;
 `;
 
-export const InterestTag = styled.span`
+export const InterestTag = styled.li`
     background-color: ${color("onSecondaryFixed")};
     color: ${color("primary")};
     padding: 0.25rem 1rem;

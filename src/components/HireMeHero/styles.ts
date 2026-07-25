@@ -35,6 +35,11 @@ export const Description = styled.p`
     a {
         color: ${color("tertiaryFixedDim")};
         font-weight: 700;
+
+        &:focus-visible {
+            outline: 2px solid ${color("tertiaryFixedDim")};
+            outline-offset: 2px;
+        }
     }
 
     @media (min-width: 768px) {
@@ -82,6 +87,11 @@ export const CVButton = styled.a`
         &:hover {
             border-color: ${color("primary")};
         }
+    }
+
+    &:focus-visible {
+        outline: 2px solid ${color("primary")};
+        outline-offset: 2px;
     }
 
     @media (min-width: 480px) {

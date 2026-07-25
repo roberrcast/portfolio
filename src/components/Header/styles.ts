@@ -109,28 +109,6 @@ export const hireMeButtonTheme: ButtonVariant = {
     padding: "0.5rem 1rem",
 };
 
-// export const LanguageToggle = styled.button`
-//     ${font("labelCaps")};
-//     display: flex;
-//     padding: 0.5rem 0.75rem;
-//     color: ${color("primary")};
-//     gap: 0.5rem;
-//     border-radius: ${rounded("lg")};
-//     border: 1px solid ${color("primary", "33")};
-//     background: transparent;
-//     transition: all 0.2s;
-//     ${hover("primary", "0D")};
-//     align-items: center;
-//
-//     span {
-//         font-size: 15px;
-//     }
-//
-//     &:active {
-//         transform: scale(0.95);
-//     }
-// `;
-
 export const LogoMenuContainer = styled.div`
     display: flex;
     gap: 1rem;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { color, font, rounded, spacing } from "../../styles/theme";
 
 export const CardContainer = styled.div`
-    widht: 100%;
+    width: 100%;
     max-width: ${spacing("containerMaxVariant")};
     margin: 0 auto 5rem;
     padding: 2rem;

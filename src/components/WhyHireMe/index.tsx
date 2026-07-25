@@ -22,7 +22,7 @@ export const WhyHireMe = () => {
             <S.SectionHeader>
                 <S.SectionTitle>{t("heading")}</S.SectionTitle>
 
-                <S.DividerLine />
+                <S.DividerLine aria-hidden="true" />
             </S.SectionHeader>
 
             <S.CardContainer>
@@ -39,7 +39,10 @@ export const WhyHireMe = () => {
                         {/* <-- items --> */}
                         {FEATURE_CARDS.map((item, index) => (
                             <S.FeatureCard key={index}>
-                                <span className="material-symbols-outlined">
+                                <span
+                                    className="material-symbols-outlined"
+                                    aria-hidden="true"
+                                >
                                     {item.icon}
                                 </span>
 

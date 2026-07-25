@@ -35,6 +35,11 @@ export const Description = styled.p`
     a {
         color: ${color("tertiaryFixedDim")};
         font-weight: 700;
+
+        &:focus-visible {
+            outline: 2px solid ${color("tertiaryFixedDim")};
+            outline-offset: 2px;
+        }
     }
 
     @media (min-width: 768px) {

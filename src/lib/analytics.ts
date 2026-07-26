@@ -21,7 +21,7 @@ export const loadGoogleAnalytics = (): void => {
     // send_page_view: false bc pageviews will be manually fired on route change(SPA)
 };
 
-export const trackPageView = (path: string): void => {
+export const trackPageview = (path: string): void => {
     if (typeof window.gtag !== "function") return;
     window.gtag("event", "page_view", {
         page_path: path,

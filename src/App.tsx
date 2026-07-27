@@ -10,6 +10,7 @@ import { StackPage } from "./pages/Stack";
 import { Contact } from "./pages/Contact";
 import { HireMe } from "./pages/HireMe";
 import { trackPageview } from "./lib/analytics";
+import { CookieConsentBanner } from "./CookieConsentBanner";
 
 const Wrapper = ({ children }: PropsWithChildren) => {
     const location = useLocation();
@@ -43,6 +44,7 @@ function App() {
                 </Wrapper>
             </main>
             <Footer />
+            <CookieConsentBanner />
         </>
     );
 }

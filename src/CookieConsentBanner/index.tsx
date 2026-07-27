@@ -14,7 +14,7 @@ export const CookieConsentBanner = () => {
         if (consent === "accepted") loadGoogleAnalytics();
     }, [consent]);
 
-    if (consent === null) return null;
+    if (consent !== null) return null;
 
     const handleChoice = (choice: ConsentChoice) => {
         localStorage.setItem("cookie-consent", choice);
@@ -28,34 +28,39 @@ export const CookieConsentBanner = () => {
             aria-labelledby="cookie-consent-title"
             aria-describedby="cookie-consent-description"
         >
-            <S.IconWrapper>
-                <span className="matarial-symbols-outlined" aria-hidden="true">
-                    cookie
-                </span>
-            </S.IconWrapper>
+            <S.ConsentContainer>
+                <S.IconWrapper>
+                    <span
+                        className="material-symbols-outlined"
+                        aria-hidden="true"
+                    >
+                        cookie
+                    </span>
+                </S.IconWrapper>
 
-            <S.Title id="cookie-consent-title">
-                Digital Experience &amp; Cookies
-            </S.Title>
+                <S.Title id="cookie-consent-title">
+                    Digital Experience &amp; Cookies
+                </S.Title>
 
-            <S.Description id="cookie-consent-description">
-                I use cookies to refine your digital experience. Minimalist,
-                intentional, and strictly technical.
-            </S.Description>
+                <S.Description id="cookie-consent-description">
+                    I use cookies to refine your digital experience. Minimalist,
+                    intentional, and strictly technical.
+                </S.Description>
 
-            <S.ButtonGroup>
-                <Button
-                    text="Accept"
-                    variant={S.acceptButtonTheme}
-                    onClick={() => handleChoice("accepted")}
-                />
+                <S.ButtonGroup>
+                    <Button
+                        text="Accept"
+                        variant={S.acceptButtonTheme}
+                        onClick={() => handleChoice("accepted")}
+                    />
 
-                <Button
-                    text="Decline"
-                    variant={S.declineButtonTheme}
-                    onClick={() => handleChoice("declined")}
-                />
-            </S.ButtonGroup>
+                    <Button
+                        text="Decline"
+                        variant={S.declineButtonTheme}
+                        onClick={() => handleChoice("declined")}
+                    />
+                </S.ButtonGroup>
+            </S.ConsentContainer>
         </S.ConsentWrapper>
     );
 };

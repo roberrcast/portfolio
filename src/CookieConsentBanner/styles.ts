@@ -44,7 +44,7 @@ export const IconWrapper = styled.div`
 
     span {
         color: ${color("onPrimaryContainer")};
-        transform: scale(1.2);
+        font-size: 46px;
         margin-bottom: 0.5rem;
     }
 `;
@@ -56,7 +56,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
     ${font("bodySm")};
-    color: rgba(255, 255, 255, 0.8);
+    color: ${color("onPrimaryContainer")};
     max-width: 36rem;
 `;
 
@@ -73,20 +73,19 @@ export const ButtonGroup = styled.div`
 `;
 
 export const acceptButtonTheme: ButtonVariant = {
-    bg: "primary",
-    text: "onPrimary",
+    bg: "onSecondaryFixed",
+    text: "primary",
     font: "labelCapsVariant",
     fontWeight: "700",
     padding: "0.75rem 2rem",
-    hoverBg: "primaryContainer",
 };
 
 export const declineButtonTheme: ButtonVariant = {
-    bg: "surface",
+    bg: "primaryContainer",
     text: "onPrimaryContainer",
+    border: "cookieConsentDecline",
     font: "labelCapsVariant",
     fontWeight: "700",
     padding: "0.75rem 2rem",
-    border: "outlineVariant",
     hoverBg: "surfaceContainerLow",
 };

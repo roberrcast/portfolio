@@ -49,6 +49,7 @@ export const theme = {
         background: "#000000",
         onBackground: "#e2e2e2",
         surfaceVariant: "#353535",
+        cookieConsentDecline: "rgba(0, 103, 95, 0.3)",
     },
 
     typography: {

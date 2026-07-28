@@ -10,8 +10,9 @@ export const loadGoogleAnalytics = (): void => {
     document.head.appendChild(script);
 
     window.dataLayer = window.dataLayer || [];
-    function gtag(...args: unknown[]) {
-        window.dataLayer.push(args);
+    function gtag(..._args: unknown[]) {
+        // eslint-disable-next-line prefer-rest-params
+        window.dataLayer.push(arguments);
     }
 
     window.gtag = gtag;

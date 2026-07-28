@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import { loadGoogleAnalytics } from "../lib/analytics";
 import { Button } from "../common/Button";
 import * as S from "./styles";
+import { useTranslation } from "react-i18next";
 
 type ConsentChoice = "accepted" | "declined";
 
 export const CookieConsentBanner = () => {
+    const { t, i18n } = useTranslation("common");
+
     const [consent, setConsent] = useState<ConsentChoice | null>(
         () => localStorage.getItem("cookie-consent") as ConsentChoice | null,
     );
@@ -19,6 +22,11 @@ export const CookieConsentBanner = () => {
     const handleChoice = (choice: ConsentChoice) => {
         localStorage.setItem("cookie-consent", choice);
         setConsent(choice);
+    };
+
+    const isSpanish = i18n.language.startsWith("es");
+    const toggleLanguage = () => {
+        i18n.changeLanguage(isSpanish ? "en" : "es");
     };
 
     return (
@@ -39,23 +47,26 @@ export const CookieConsentBanner = () => {
                 </S.IconWrapper>
 
                 <S.Title id="cookie-consent-title">
-                    Digital Experience &amp; Cookies
+                    {t("cookieConsent.title")}
                 </S.Title>
 
                 <S.Description id="cookie-consent-description">
-                    I use cookies to refine your digital experience. Minimalist,
-                    intentional, and strictly technical.
+                    {t("cookieConsent.description")}
                 </S.Description>
+
+                <S.LanguageSwitchLink onClick={toggleLanguage}>
+                    {isSpanish ? "Read in English" : "Leer en español"}
+                </S.LanguageSwitchLink>
 
                 <S.ButtonGroup>
                     <Button
-                        text="Accept"
+                        text={t("cookieConsent.accept")}
                         variant={S.acceptButtonTheme}
                         onClick={() => handleChoice("accepted")}
                     />
 
                     <Button
-                        text="Decline"
+                        text={t("cookieConsent.decline")}
                         variant={S.declineButtonTheme}
                         onClick={() => handleChoice("declined")}
                     />

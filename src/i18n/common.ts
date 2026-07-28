@@ -29,6 +29,14 @@ export const en = {
     misc: {
         opensInNew: "opens in new tab",
     },
+
+    cookieConsent: {
+        title: "Digital Experience & Cookies",
+        description:
+            "I use cookies to refine your digital experience. Minimalist, intentional, and strictly technical.",
+        accept: "Accept",
+        decline: "Decline",
+    },
 };
 
 export const es = {
@@ -61,5 +69,13 @@ export const es = {
 
     misc: {
         opensInNew: "se abre en una nueva pestaña",
+    },
+
+    cookieConsent: {
+        title: "Experiencia Digital & Cookies",
+        description:
+            "Utilizo cookies para mejorar tu experiencia digital. Son minimalistas, intencionales y estrictamente técnicas.",
+        accept: "Aceptar",
+        decline: "Rechazar",
     },
 };

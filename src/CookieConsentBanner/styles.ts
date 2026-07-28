@@ -25,7 +25,7 @@ export const ConsentWrapper = styled.aside`
 
 export const ConsentContainer = styled.div`
     background-color: ${color("primaryContainer")};
-    padding: 2rem;
+    padding: 1rem;
     border-radius: ${rounded("lg")};
     text-align: center;
     max-width: ${spacing("containerMax")};
@@ -45,7 +45,6 @@ export const IconWrapper = styled.div`
     span {
         color: ${color("onPrimaryContainer")};
         font-size: 46px;
-        margin-bottom: 0.5rem;
     }
 `;
 
@@ -56,8 +55,27 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
     ${font("bodySm")};
+    text-align: center;
     color: ${color("onPrimaryContainer")};
     max-width: 36rem;
+    margin: 0 auto;
+`;
+
+export const LanguageSwitchLink = styled.button`
+    background: none;
+    border: none;
+    padding: 0;
+    color: ${color("onPrimaryContainer")};
+    text-decoration: underline;
+    font-size: 0.75rem;
+    opacity: 0.8;
+    cursor: pointer;
+    align-self: center;
+
+    &:focus-visible {
+        outline: 2px solid ${color("onPrimaryContainer")};
+        outline-offset: 2px;
+    }
 `;
 
 export const ButtonGroup = styled.div`

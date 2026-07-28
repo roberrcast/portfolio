@@ -17,7 +17,7 @@ export const loadGoogleAnalytics = (): void => {
     window.gtag = gtag;
 
     gtag("js", new Date());
-    gtag("config", GA_MEASUREMENT_ID, { send_page_view: false });
+    gtag("config", GA_MEASUREMENT_ID);
     // send_page_view: false bc pageviews will be manually fired on route change(SPA)
 };
 

@@ -64,7 +64,8 @@ export const buttonMixin = (variant: ButtonVariant) => css`
 
     background-color: ${color(variant.bg)};
     color: ${color(variant.text)};
-    border: ${variant.border ? `1px solid ${color(variant.border)}` : "none"};
+    border: ${(props) =>
+        variant.border ? `1px solid ${color(variant.border)(props)}` : "none"};
 
     transition:
         transform 0.2s ease-in-out,

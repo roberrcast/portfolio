@@ -9,6 +9,8 @@ import { About } from "./pages/About";
 import { StackPage } from "./pages/Stack";
 import { Contact } from "./pages/Contact";
 import { HireMe } from "./pages/HireMe";
+import { trackPageview } from "./lib/analytics";
+import { CookieConsentBanner } from "./CookieConsentBanner";
 
 const Wrapper = ({ children }: PropsWithChildren) => {
     const location = useLocation();
@@ -16,6 +18,9 @@ const Wrapper = ({ children }: PropsWithChildren) => {
     useLayoutEffect(() => {
         // Scroll to top of page
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+
+        // track page view GA4
+        trackPageview(location.pathname);
     }, [location.pathname]);
 
     return children;
@@ -39,6 +44,7 @@ function App() {
                 </Wrapper>
             </main>
             <Footer />
+            <CookieConsentBanner />
         </>
     );
 }
